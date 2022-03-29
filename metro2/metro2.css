@@ -1,0 +1,89 @@
+body {
+
+    font-family: Montserrat, sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.metro-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+.metro-wrapper{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+.osun{
+  padding: 20px;
+  
+}
+
+.enugupeople{    
+    padding: 20px;
+    margin-left: -40px;  
+    
+}
+
+.chidinma { 
+    margin-left: -40px;
+    
+}
+
+.cult{
+    padding: 20px;
+    
+}
+
+.firstbank{    
+    padding: 20px;
+    margin-left: -50px;   
+    height: 250px;    
+}
+
+.road-accidents { 
+    padding: 20px;
+    margin-left: -50px;
+    
+}
+
+.main-news img{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+hr{
+    margin-top: 40px;
+    margin-bottom: -50px;
+    width: 80%;
+}
+.osun-robbery{
+    padding: 20px;
+    
+}
+.bayelsa-cultist{    
+    padding: 20px;
+    margin-left: -70px;   
+      
+}
+
+.kaduna-terrorists { 
+    padding: 10px;
+    margin-left: -50px;
+    
+}
