@@ -107,7 +107,7 @@ main{
 /*2nd and 3rd*/
 
 .horizontal{
-    margin-top: 70px;
+    margin-top: 50px;
     opacity: 0.3;
 }
 
@@ -120,14 +120,13 @@ main{
 .news-content-container{
  display: flex;
  margin-top: 50px;
- margin-bottom: 200px;
  gap: 20px;
 }
 
 
 .section-second-news-container{
  display: flex;
- margin-top: 50px;
+ margin-top: 30px;
  gap: 20px;
 }
 
