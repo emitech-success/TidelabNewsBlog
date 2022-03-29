@@ -5,3 +5,249 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+
+/*
+*{
+    margin:0;
+    padding:0;
+}
+*/
+/*
+body {
+    margin:0;
+    padding:0;
+}
+*/
+
+/*
+img {
+    max-width:100%;
+    border:0;
+}
+
+*/
+
+a {
+    color:black;
+}
+
+.section-heading-separator {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    margin-bottom: 1em;
+}
+
+.section-heading-separator .heading-title{
+    font-size:1.2em;
+    font-family:'Poppins', sans-serif;
+    line-height: 1.2;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0.25em 1em;
+}
+
+.heading-title a {
+    text-decoration: none;
+    color:black;
+}
+.section-heading-separator fieldset {
+    width:100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 2%;
+}
+
+.row {
+    max-width: none;
+    margin-right: -.9375rem;
+    margin-left: -.9375rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT*/
+.column {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    min-width: initial;
+}
+
+.list-outline{
+    padding-left: 1.25em;
+    border-left: 2px solid rgb(134, 121, 121);
+}
+
+.list-outline .list-item{
+    margin-bottom: .25em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid rgb(134, 121, 121);
+}
+
+.list-outline .list-item:last-child {
+    border-bottom: none;
+}
+
+
+ol, ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+article{
+    display: block;
+}
+
+.item-content {
+    margin-bottom: 0px;
+}
+
+.item-content .before-entry-time {
+    margin-bottom: 0.25em;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-outline .item-content .before-entry-time {
+    position: relative;
+}
+
+.before-entry-time {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 0.825em;
+    color:rgb(90, 80, 80);
+}
+
+::before, ::after {
+    box-sizing: inherit;
+}
+
+
+.list-outline .item-content .before-entry-time ::before{
+    position:absolute;
+    top:0;
+    left: -1.875em;
+    height: .75em;
+    width: .75em;background: red;
+    display: block;
+    border-radius: 50%;
+    content:'';
+}
+
+.entry-time {
+    margin-bottom: 0.25em;
+    display: flex;
+    align-items: center;
+}
+
+.news-item-content {
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.group-news-media-content-left .list-outline .item-content .news-item-content {
+    font-size:1.0875em;
+}
+
+.news-item-content a{
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE MIDDLE (CENTER) SECTION*/
+
+
+.middle-news-content .middle-news-content-image-display {
+    display:block;
+    margin-bottom:0.5em;
+}
+
+.middle-news-content-image-display {
+    position:relative;
+    padding-bottom: 56.25%;
+
+}
+
+
+.middle-news-content-image-display img {
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+.group-news-media-content-left .middle-news-content .middle-news-content-headline {
+    line-height:1.2;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0.865em;
+    font-size:1.55em;
+}
+
+
+.group-news-media-content-left .group-news-content-middle-main {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+}
+
+/**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE RIGHT HAND SECTION 
+(WITH A FLIP IN THE POSITION AND FONT STYLING OF THE div class="entry-time" and the h3 class="news-item-content")*/
+
+
+
+
+/*TRENDING VIDEOS CONTENT SECTION STYLING*/
+
+.video-content-section {
+    border-top: 2px solid rgb(134, 121, 121);
+    margin-top: 0.865em;
+    margin-top: 2%;
+}
+
+
+.video-content-container {
+    display:flex;
+    justify-content: center;
+    gap:2%;
+   /* border:2px solid black; */
+    align-items: center;
+    max-width:fit-content;
+    max-height:fit-content;
+    
+}
+
+
+
+.video-content-card {
+    padding:10px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+}
+
+.video-content-card a img {
+    width:100%;
+    height:100%;
+}
