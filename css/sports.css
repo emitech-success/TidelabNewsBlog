@@ -54,6 +54,36 @@ nav {
     padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
 /* //MAIN SECTION// */
+.section-heading-separator {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    margin-bottom: 1em;
+}
+  
+.section-heading-separator .heading-title{
+    font-size:1.2em;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.2;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0.25em 1em;
+}
+  
+.heading-title a {
+    text-decoration: none;
+    color:black;
+}
+.section-heading-separator fieldset {
+    width:100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 2%;
+}
 main{
     display: flex;
     justify-content: space-between;
@@ -193,7 +223,7 @@ a{
 }
 
 img{
-    width: 300px;
+    width: 220px;
     height: 160px;
 } 
 
@@ -457,11 +487,54 @@ footer hr {
     }
 }
     /* FOR SCREEN SIZES  */
+@media only screen and (min-width: 1024px){
+
+    }
+/* //MEDIUM DEVICES LIKE LANDSCAPE TABLETS */
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+}
+
+/* //SMALL DEVICES LIKE POTRAIT TABLET,LARGE PHONE */
+@media screen and (min-width:480px) and (max-width: 767px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .sports-wrapper{
+        width: 100%;
+    }
+    main-news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        /* border-bottom: 1px solid rgb(226, 217, 217); */
+    }
+    .right-section, .left-section, .middle-section{
+        width: 100%;
+    }
+    .middle-section{
+        border: none;
+    }
+    
+}
+
+
+
+
+
+
+
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
 @media only screen and (max-width: 479px){
     main{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
