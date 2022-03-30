@@ -223,7 +223,7 @@ a{
 }
 
 img{
-    width: 300px;
+    width: 220px;
     height: 160px;
 } 
 
@@ -487,11 +487,54 @@ footer hr {
     }
 }
     /* FOR SCREEN SIZES  */
+@media only screen and (min-width: 1024px){
+
+    }
+/* //MEDIUM DEVICES LIKE LANDSCAPE TABLETS */
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+}
+
+/* //SMALL DEVICES LIKE POTRAIT TABLET,LARGE PHONE */
+@media screen and (min-width:480px) and (max-width: 767px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .sports-wrapper{
+        width: 100%;
+    }
+    main-news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        /* border-bottom: 1px solid rgb(226, 217, 217); */
+    }
+    .right-section, .left-section, .middle-section{
+        width: 100%;
+    }
+    .middle-section{
+        border: none;
+    }
+    
+}
+
+
+
+
+
+
+
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
 @media only screen and (max-width: 479px){
     main{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
