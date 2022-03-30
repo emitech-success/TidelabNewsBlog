@@ -54,6 +54,36 @@ nav {
     padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
 /* //MAIN SECTION// */
+.section-heading-separator {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    margin-bottom: 1em;
+}
+  
+.section-heading-separator .heading-title{
+    font-size:1.2em;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.2;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0.25em 1em;
+}
+  
+.heading-title a {
+    text-decoration: none;
+    color:black;
+}
+.section-heading-separator fieldset {
+    width:100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 2%;
+}
 main{
     display: flex;
     justify-content: space-between;

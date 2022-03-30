@@ -53,6 +53,11 @@ nav {
 .nav-call-to-action a:last-child {
     padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
+/* //MAIN SECTION// */
+/* Add CSS for main section here */
+
+
+
 
 /* //FOOTER// */
 footer {
@@ -65,12 +70,7 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
 }
-/* //MAIN SECTION// */
-/* Add CSS for main section here */
 
-
-
-/* //FOOTER// */
 .footer-top {
     display: flex;
     justify-content: space-between;
