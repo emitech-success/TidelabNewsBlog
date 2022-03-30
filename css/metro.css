@@ -160,7 +160,7 @@ padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 
 /*third section*/
@@ -182,7 +182,7 @@ padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 
 
@@ -256,13 +256,23 @@ code for the third section
 margin-bottom: 100px;
 }
 .advert-div p img{
-  width: 150px;
+  width: 250px;
   height: 400px;
 }
 .ad-name{
   text-align: center;
   font-style: italic;
   font-size: 10px;
+}
+#middle-ad{
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+}
+.middle-ad-name img{
+  width: 80%;
+  height: 200px;
+ padding-bottom: 40px;
 }
 
 
