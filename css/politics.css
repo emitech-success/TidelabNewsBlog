@@ -105,6 +105,10 @@ h2:after {
 .main-news{
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 25px;
 }
 
 a {
@@ -114,16 +118,25 @@ a {
 
 .first-card{
     width: 25%;
-}
+   }
 
 .first-card img{
     width: 100%;
 }
 
+.first-link-wrap{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+.second-link-wrap{
+    padding: 20px 0;
+}
+
 .second-card{
     width: 45%;
-   border-right: 1px solid black;
-   
+   border-right: 1px solid rgba(0, 0, 0, 0.1);
+   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 .second-card img{
     width: 100%;
@@ -134,6 +147,7 @@ a {
     font-size: 24px;
     /* text-align: center; */
     display: block;
+    padding:0 30px;
 }
 
 .second-card p{
@@ -147,7 +161,101 @@ a {
 .third-card a{
     display: block;
     font-weight: 700;
+}
+
+.links{
     margin-bottom: 20px;
+}
+
+.links h6{
+    margin-top: 8px;
+    font-weight: 200;
+}
+
+.section-2, .section-3{
+    width: 80%; 
+    margin: 40px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 150px;
+}
+
+.section-4{
+    width: 80%; 
+    margin: 40px auto;
+    padding-bottom: 150px;
+}
+.row-2 a, .row-3 a, .row-4 a{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 22%;
+}
+.row-2, .row-3, .row-4{
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .row-2 img, .row-3 img, .row-4 img{
+    width: 100%;
+    height: 150px;
+ }
+
+.section-5 {
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+
+
+.section-5 div{
+    width: 30px;
+    height: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f3f3f3; 
+    padding: 10px; 
+    margin: 3px;
+    border-radius: 3px;
+} 
+
+.section-5 .one-link{
+    background: red;
+    border-radius: 3px;
+}
+
+.section-5 .six{
+    width: 50px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.section-6{
+    width: 80%;
+    margin: 40px auto;
+    padding-bottom: 50px;
+}
+
+.row-6{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-6 a{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 22%;
+}
+.r0w-6 img{
+    width: 100%;
+    height: 150px;
 }
 /* //FOOTER// */
 footer {
