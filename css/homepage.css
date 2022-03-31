@@ -304,6 +304,8 @@ footer hr {
 
 /*this my own styling section for the home page layout*/
 
+
+
 /*
 *{
     margin:0;
@@ -366,7 +368,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- /* border:2px solid tomato; */
+/*  border:2px solid tomato; */
 }
 
 /* this media query aligns all items in a column layout, however the div class must have a pre class name="row"
@@ -541,7 +543,7 @@ a {
 
 .video-content-section {
   border-top: 2px solid rgb(134, 121, 121);
-  margin-top: 0.865em;
+  margin-bottom: 1.865em;
   margin-top: 2%;
 }
 
@@ -599,7 +601,36 @@ a {
     font-family: 'poppins' sans-serif;
 }
 
-/*the next section is the metro and business section*/
+/*the next section is the metro and business section this will have the metro name attached to .metro-(group-news-media-content-left) all styling class*/
 
 
+.metro-group-news-media-content-left {
+    margin-bottom:5%;
+   padding-top:5%;
+   border-top: 2px solid rgb(134, 121, 121);
+} 
 
+
+.metro-group-news-media-content-left .group-news-content-middle-main {
+  margin-bottom:5.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+}
+
+
+.metro-group-news-media-content-left .middle-news-content .middle-news-content-headline {
+  line-height:1.2;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0.865em;
+  font-size:1.55em;
+} 
+
+
+.metro-group-news-media-content-left .list-outline .item-content .news-item-content {
+  font-size:1.0875em;
+}
+
+
+/*this is the end my own css styling section for the home page layout*/
