@@ -220,7 +220,7 @@ padding-top: 2rem;
 }
 
 .advert{
-  width: 20%;
+  width: 15%;
  
   display: flex;
   flex-direction: column;
@@ -500,4 +500,35 @@ footer hr {
     .mentor-name {
       text-align: center;
     }
+}
+
+@media (max-width: 750px){
+  .advert{
+    width: 100%;
+  }
+  .whole-section{
+    display: block;
+  }
+
+  img{
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    padding: auto;
+  }
+
+  .first-section img{
+    width: 100px;
+    height: 130px;
+  }
+  
+  .section-wrapper img{
+    width: 120px;
+    height: 150px;
+  }
+  
+  .third-section-wrapper img{
+    width: 120px;
+    height: 150px
+  }
 }
