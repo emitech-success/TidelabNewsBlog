@@ -94,7 +94,10 @@ main {
   justify-content: space-between;
   margin-top: 50px;
 }
-.whole-section {
+
+
+.whole-section{
+
   width: 80%;
 }
 .span3-name {
