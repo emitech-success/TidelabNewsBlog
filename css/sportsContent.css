@@ -1,4 +1,15 @@
 /* Header Section */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap');
+*{
+    margin-right: 0;
+    margin-left: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
 header {
     height: 90px;
     position: fixed;
