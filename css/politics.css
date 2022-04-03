@@ -295,6 +295,7 @@ a {
 footer {
   background-color: black;
   padding-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 .footer-top {
@@ -447,7 +448,7 @@ footer hr {
   width: 90%;
   margin: 1rem auto 1rem auto;
 }
-.mentor-name,
+
 .copyright {
   text-align: center;
   color: white;
@@ -491,6 +492,7 @@ footer hr {
     position: absolute;
     margin-top: 2.76rem;
     top: 20px;
+    right: 0;
     width: 100%;
     z-index: 100;
   }
@@ -512,7 +514,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background-color: black;
     opacity: 0.9;
-    height: 87vh;
+    height: 65vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -587,10 +589,7 @@ footer hr {
     display: flex;
     justify-content: center;
   }
-  .mentor-name {
-    text-align: center;
-  }
-  .mentor-name,
+
   .copyright {
     font-weight: 700;
     line-height: 1.4;
