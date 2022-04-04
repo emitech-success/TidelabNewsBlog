@@ -1,0 +1,858 @@
+/* Header Section */
+header {
+    background: linear-gradient(to right, #2bb7da, #31d35c);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #2bb7da;
+    z-index: 5;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+  }
+  
+  .header-logo h3,
+  .footer-logo h3 {
+    color: white;
+    font-size: 1.3rem;
+  }
+  .header-logo h3 {
+    margin-left: 1rem;
+  }
+  .header-logo span,
+  .footer-logo span {
+    color: lawngreen;
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 25px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-checkbox {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  .nav-menu li:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  .nav-menu li a,
+  .nav-call-to-action a {
+    text-decoration: none;
+    color: white;
+  }
+  /* hover styles for the nav-link */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 5px;
+    background: black;
+    left: 0;
+    right: 0;
+    bottom: -1.4625rem;
+    opacity: 0;
+  }
+  .nav-link:hover {
+    color: black;
+  }
+  .nav-link:hover::before {
+    opacity: 0.75;
+  }
+  .nav-call-to-action {
+    margin-right: 2rem;
+  }
+  .nav-call-to-action a {
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  .nav-call-to-action a:first-child {
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.2rem;
+  }
+  .nav-call-to-action a:last-child {
+    padding: 0.6rem 0.6rem 0.5rem 0.6rem;
+  }
+
+
+
+
+
+
+/*this my own styling section for the home page layout*/
+
+
+/*
+*{
+    margin:0;
+    padding:0;
+}
+*/
+/*
+body {
+    margin:0;
+    padding:0;
+}
+*/
+
+/*
+img {
+    max-width:100%;
+    border:0;
+}
+
+*/
+
+a {
+    color:black;
+  }
+  
+  
+  object {
+      width:100%;
+      height:300px;
+      margin-top: 2%;
+  }
+  
+  .carousel-inner .carousel-item img {
+  object-fit: cover;
+  position: 50%;
+  }
+  
+  .section-heading-separator {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    margin-bottom: 1em;
+  }
+  
+  .section-heading-separator .heading-title{
+    font-size:1.2em;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.2;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0.25em 1em;
+  }
+  
+  .heading-title a {
+    text-decoration: none;
+    color:black;
+  }
+  .section-heading-separator fieldset {
+    width:100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 2%;
+  }
+  
+  
+  .main-news-content{
+      width: 80%;
+  }
+  
+  .advertisment{
+      width:20%;
+      height:60%;
+      left:80%;
+      top:10%;
+      position:absolute;
+  }
+  
+  
+  .advertisment-2{
+      width:20%;
+      height:90%;
+      left:80%;
+      top:100%;
+      position:absolute;
+  }
+  
+  
+  .advertisment-3{
+      width:20%;
+      height:50%;
+      left:80%;
+      top:230%;
+      position:absolute;
+  
+  }
+  
+  
+  /*this section affects the overall width of the main-news-contect-section on the row layout*/
+  
+  .row {
+    max-width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  /*  border:2px solid tomato; */
+  }
+  
+  
+  /*STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT*/
+  .column {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    min-width: initial;
+  }
+  
+  .list-outline{
+    padding-left: 1.25em;
+    border-left: 2px solid rgb(209, 188, 188);
+  }
+  
+  .list-outline .list-item{
+    margin-bottom: .25em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid rgb(209, 188, 188);
+  }
+  
+  
+  /*this line of code affects the last child of the list items to not have a bottom border*/
+  
+  .list-outline .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  
+  ol, ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+  }
+  
+  article{
+    display: block;
+  }
+  
+  .item-content {
+    margin-bottom: 0px;
+  }
+  
+  .item-content .before-entry-time {
+    margin-bottom: 0.25em;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .list-outline .item-content .before-entry-time {
+    position: relative;
+  }
+  
+  .before-entry-time {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 0.825em;
+    color:rgb(90, 80, 80);
+  }
+  
+  ::before, ::after {
+    box-sizing: inherit;
+  }
+  
+  
+  .list-outline .item-content .before-entry-time ::before{
+    position:absolute;
+    top:0;
+    left: -1.875em;
+    height: .75em;
+    width: .75em;background: green;
+    display: block;
+    border-radius: 50%;
+    content:'';
+  }
+  
+  .entry-time {
+    margin-bottom: 0.25em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .news-item-content {
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  
+  .group-news-media-content-left .list-outline .item-content .news-item-content {
+    font-size:1.0875em;
+  }
+  
+  .news-item-content a{
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  
+  /**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE MIDDLE (CENTER) SECTION*/
+  
+  
+  .middle-news-content .middle-news-content-image-display {
+    display:block;
+    margin-bottom:0.5em;
+  }
+  
+  .middle-news-content-image-display {
+    position:relative;
+    padding-bottom: 56.25%;
+  
+  }
+  
+  
+  .middle-news-content-image-display img {
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  
+  
+  .middle-news-content-image-display img:hover {
+      box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.9);
+      transition: 0.5s;
+      scale: 1.5;
+  }
+  
+  .group-news-media-content-left .middle-news-content .middle-news-content-headline {
+    line-height:1.2;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0.865em;
+    font-size:1.55em;
+  }
+  
+  
+  .group-news-media-content-left .group-news-content-middle-main {
+    margin-bottom:2%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+  }
+  
+  
+  
+  /**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE RIGHT HAND SECTION 
+  (WITH A FLIP IN THE POSITION AND FONT STYLING OF THE div class="entry-time" and the h3 class="news-item-content")*/
+  
+  
+  
+  
+  /*TRENDING VIDEOS CONTENT SECTION STYLING*/
+  
+  .video-content-section {
+    border-top: 2px solid rgb(134, 121, 121);
+    margin-bottom: 1.865em;
+    margin-top: 2%;
+    border-bottom: 2px solid rgb(134, 121, 121);
+    
+  }
+  
+  
+  .video-content-title {
+    text-align:center;
+    padding-top:1%;
+  }
+  
+  .video-content-container {
+    display:flex; 
+    justify-content: center;
+    gap:2%;
+   /* border:2px solid black; */
+    
+    max-height:fit-content;
+    padding-top:1%;
+    
+  }
+  
+  .video-content-container img:hover {
+      box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.9);
+      transition: 0.5s;
+      scale: 1.5;
+  }
+  
+  .video-content-card {
+    padding:0px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+  
+  }
+  
+  .video-content-card a img {
+    width:100%;
+    height:100%;
+  }
+  
+  .first-video-content-card, .second-video-content-card, .third-video-content-card, .fourth-video-content-card, .fifth-video-content-card {
+      padding:5px;
+      flex-basis:10%;
+      flex-grow: 1;
+      flex-shrink:0;
+    }
+  
+    /*this is for the videos in the other news section*/
+  
+    .video-content-card-holder{
+      padding:5px;
+      flex-basis:10%;
+      flex-grow: 1;
+      flex-shrink:0;
+    }
+  
+  
+  
+  /*this is the styling for navigating to other videos using the more videos button*/
+  .more-videos-button {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      padding-bottom:2%;
+      margin-right: 1%;
+  }
+  
+  .more-videos-button .more-videos-text {
+      font-size: 1.5em;
+      font-weight:bold;
+      color:rgb(10, 83, 26);
+      font-family: 'poppins' sans-serif;
+  }
+  
+  @media (min-width: 720px) and (max-width:920px) {
+      .video-content-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width:100%;
+          padding:0;
+          gap:0%;
+          max-width:none;
+    margin:0px;
+      }
+  }
+  
+  
+  
+  .advertisment-title {
+      text-align: center;
+  }
+  
+  .advert-image-card {
+   /*   border:2px solid black; */
+      padding:10px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+    height:90%;
+    margin:0.5% 1% 0.5% 1%;
+  }
+  
+  .advert-image-card img {
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      object-position:50%;
+  }
+  
+  .primary-advert {
+      margin-bottom:1.5%;
+  }
+  
+  .primary-advert .pma-image-card {
+      padding:5px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+    height:90%;
+    margin:0.5% 1% 0.5% 1%;
+  }
+  
+  .primary-advert .pma-image-card img {
+      width:100%;
+      height:100%;
+  }
+  
+  
+  .secondary-advert /*this will have the same content as advertisment-2 section*/ {
+      margin-bottom:1.5%;
+      margin-top:1.5%;
+      display:none;
+  }
+  
+  
+  .secondary-advert .seca-image-card {
+      padding:5px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+    height:90%;
+    margin:0.5% 1% 0.5% 1%;
+  }
+  
+  .secondary-advert .seca-image-card img {
+      width:100%;
+      height:100%;
+  }
+  
+  .secondary-advert-two /*this will have the same content as advertisment-1 section*/ {
+      margin-bottom:1.5%;
+      margin-top:1.5%;
+      display:none;
+  }
+  
+  .secondary-advert-two .secat-image-card {
+      padding:5px;
+    flex-basis:10%;
+    flex-grow: 1;
+    flex-shrink:0;
+    height:90%;
+    margin:0.5% 1% 0.5% 1%;
+  }
+  
+  .secondary-advert-two .secat-image-card img {
+      width:100%;
+      height:100%;
+  }
+  
+  .secondary-advert, .secondary-advert-two, .primary-advert {
+      height:150px;
+      width:75%
+  }
+  
+  .secondary-advert h5, .secondary-advert-two h5, .primary-advert h5 {
+      text-align: center;
+  }
+  
+  @media (max-width: 720px) {
+      .secondary-advert {
+          display:block;
+          width:100%;
+      }
+      .secondary-advert-two {
+          display:block;
+          width:100%;
+      }
+      .primary-advert {
+          display:none;
+      }
+      .video-content-section {
+          border-bottom:none;
+      }
+    }
+  
+  
+  
+  /*the next section is the metro and business section this will have the metro name attached to .metro-(group-news-media-content-left)
+   all styling class*/
+  
+  
+  .metro-group-news-media-content-left {
+      margin-bottom:2%;
+     padding-top:5%;
+     border-top: 2px solid rgb(134, 121, 121);
+  } 
+  
+  
+  .metro-group-news-media-content-left .group-news-content-middle-main {
+    margin-bottom:2%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+  }
+  
+  
+  .metro-group-news-media-content-left .middle-news-content .middle-news-content-headline {
+    line-height:1.2;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0.865em;
+    font-size:1.55em;
+  } 
+  
+  
+  .metro-group-news-media-content-left .list-outline .item-content .news-item-content {
+    font-size:1.0875em;
+  }
+  
+  
+  .metro-group-news-media-content-left .news-item-content-image {
+    max-width:fit-content;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+  }
+  
+  .metro-group-news-media-content-left .news-item-content-image img {
+    width:100%;
+    height:100%;
+  }
+  
+  .metro-group-news-media-content-left .news-item-content-image img:hover {
+      box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.9);
+      transition: 0.5s;
+      scale: 1.5;
+  }
+  
+  .metro-group-news-media-content-left .middle-news-content .entry-time {
+    color:red;
+    font-weight:bolder;
+    font-size: larger;
+  }
+  
+  .metro-group-news-media-content-left .group-news-content-left .metro-entry-time {
+    color:red;
+    font-weight:bolder;
+    font-size: larger;
+  }
+  
+  
+  
+  @media (min-width: 720px) and (max-width:920px) {
+  .metro-group-news-media-content-left .group-news-content-right {
+      display:none;
+  }
+  
+  .main-news-content {
+      width:100%;
+  }
+  .column {
+      width:100%;
+  }
+  
+  .group-news-media-content-left {
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+  }
+  .POS-group-news-media-content-left {
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+  }
+  
+  .metro-group-news-media-content-left {
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+  }
+  }
+  
+  
+  
+  
+  
+  /*the end of the metro and business css styling section having the metro name attached to .metro-(group-news-media-content-left)
+   all styling class*/
+  
+  
+  
+  
+  
+   /*the next section is the POLITICS and SPORTS section this will have the POS name attached to .POS-(group-news-media-content-left)
+   all styling class*/
+  
+  
+  .POS-group-news-media-content-left {
+    margin-bottom:2%;
+   padding-top:5%;
+   border-top: 2px solid rgb(134, 121, 121);
+  } 
+  
+  
+  .POS-group-news-media-content-left .group-news-content-middle-main {
+  margin-bottom:2%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+  }
+  
+  
+  .POS-group-news-media-content-left .middle-news-content .middle-news-content-headline {
+  line-height:1.2;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0.865em;
+  font-size:1.55em;
+  } 
+  
+  
+  .POS-group-news-media-content-left .list-outline .item-content .news-item-content {
+  font-size:1.0875em;
+  }
+  
+  
+  .POS-group-news-media-content-left .news-item-content-image {
+  max-width:fit-content;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+  }
+  
+  .POS-group-news-media-content-left .news-item-content-image img {
+  width:100%;
+  height:100%;
+  }
+  
+  .POS-group-news-media-content-left .news-item-content-image img:hover {
+      box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.9);
+      transition: 0.5s;
+      scale: 1.5;
+      }
+  
+  
+  .POS-group-news-media-content-left .middle-news-content .entry-time {
+    color:red;
+   font-weight:bolder;
+   font-size: larger;
+  } 
+  
+  
+  .POS-group-news-media-content-left .POS-group-news-content-left .POS-entry-time {
+    color:red;
+   font-weight:bolder;
+   font-size: larger;
+  } 
+  
+  
+  
+  @media (min-width: 720px) and (max-width:920px) {
+      .POS-group-news-media-content-left .group-news-content-right {
+          display:none;
+      }
+      }
+  
+  
+  /*the end of the POLITICS and SPORTS css styling section having the POS name attached to .POS-(group-news-media-content-left)
+  all styling class*/
+  
+  
+  
+  
+  /*this is the end my own css styling section for the home page layout*/
+  
+  
+  
+  /* this media query aligns all items in a column layout, however the div class must have a pre class name="row"
+    while the .column affects the column layout in the row section which is the left-news-content, the middle-news-content and 
+    the right-news-content, to take a width of 100% 
+  */
+  @media (max-width: 720px) {
+      .row {
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+      }
+      .column .group-news-content-middle-main{
+        width: 100%;
+      }
+    
+      /*this line of code affects the last child of the list items to not have a bottom border*/
+      .list-outline .list-item:last-child {
+          margin-bottom:1.5%;
+      }
+      
+    
+      .advertisment, .advertisment-2, .advertisment-3 {
+          display:none;
+      }
+    
+      .main-news-content{
+        width:100%;
+    }
+   
+    }
+  
+  
+    @media (min-width: 720px) and (max-width:920px) {
+      .advertisment, .advertisment-2, .advertisment-3 {
+          display:none;
+      }
+  }
+  /*
+  @media (min-width: 900px) {
+      .advertisment, .advertisment-2, .advertisment-3 {
+          display:none;
+      }
+  }
+  
+  
+  
+  @media (min-width: 1200px) and (max-width:1400px) {
+      .advertisment-3 {
+         display:none;
+     }
+  } */
+  
+  
+  
+  /* //END OF MAIN SECTION STYLING/ */
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/*Responsiveness For very small devices*/
+@media (max-width: 350px) {
+    .footer-middle-section {
+      justify-content: center;
+    }
+    .footer-section {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .footer-bottom-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer-bottom-link {
+      flex-direction: row;
+      width: 70%;
+    }
+    .footer-social-links {
+      width: 90%;
+      margin-top: 1rem;
+    }
+  }
+  
