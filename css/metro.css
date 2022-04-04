@@ -9,9 +9,10 @@
 /* //HEADER SECTION// */
 
 header {
-  margin-right: 0;
-  margin-left: 0;
   background: linear-gradient(to right, #2bb7da, #31d35c);
+  margin-top: -0.45rem;
+  margin-left: -0.35rem;
+  margin-right: -0.45rem;
 }
 nav {
   display: flex;
@@ -309,6 +310,95 @@ code for the third section*/
 footer {
   background-color: black;
   padding-top: 1rem;
+  margin-bottom: -2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+header {
+  background: linear-gradient(to right, #2bb7da, #31d35c);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.header-logo h3,
+.footer-logo h3 {
+  color: white;
+  font-size: 1.3rem;
+}
+.header-logo h3 {
+  margin-left: 1rem;
+}
+.header-logo span,
+.footer-logo span {
+  color: lawngreen;
+  font-size: 1.4rem;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-checkbox {
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-menu li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.nav-menu li a,
+.nav-call-to-action a {
+  text-decoration: none;
+  color: white;
+}
+/* hover styles for the nav-link */
+.nav-link {
+  position: relative;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 5px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: -1.4625rem;
+  opacity: 0;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-link:hover::before {
+  opacity: 0.75;
+}
+.nav-call-to-action {
+  margin-right: 2rem;
+}
+.nav-call-to-action a {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.nav-call-to-action a:first-child {
+  padding: 0.5rem 0.5rem;
+  margin-right: 0.2rem;
+}
+.nav-call-to-action a:last-child {
+  padding: 0.6rem 0.6rem 0.5rem 0.6rem;
+}
+/* //MAIN SECTION/ */
+
+/* //FOOTER SECTION// */
+
+footer {
+  background-color: black;
+  padding-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 .footer-top {
@@ -461,7 +551,6 @@ footer hr {
   width: 90%;
   margin: 1rem auto 1rem auto;
 }
-.mentor-name,
 .copyright {
   text-align: center;
   color: white;
@@ -505,6 +594,7 @@ footer hr {
     position: absolute;
     margin-top: 2.76rem;
     top: 20px;
+    right: 0;
     width: 100%;
     z-index: 100;
   }
@@ -526,7 +616,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background-color: black;
     opacity: 0.9;
-    height: 87vh;
+    height: 65vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -594,20 +684,16 @@ footer hr {
     margin-left: 1.5rem;
   }
   .footer-social-links {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
   }
   .social-link {
     display: flex;
     justify-content: center;
   }
-  .mentor-name {
-    text-align: center;
-  }
-  .mentor-name,
   .copyright {
     font-weight: 700;
-    line-height: 1.4;
+    /* line-height: 1.4; */
     font-size: 0.8rem;
   }
 }
