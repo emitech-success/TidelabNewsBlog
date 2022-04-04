@@ -5,10 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 /* //HEADER SECTION// */
 header {
-  margin-right: 0;
-  margin-left: 0;
   background: linear-gradient(to right, #2bb7da, #31d35c);
 }
 nav {
@@ -85,470 +84,10 @@ nav {
 .nav-call-to-action a:last-child {
   padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
+/* //MAIN SECTION/ */
 
-/* //MAIN SECTION// */
-.section-heading {
-  position: relative;
-  display: block;
-}
+/* //FOOTER SECTION// */
 
-.left,
-.right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 0.2px;
-  background: rgba(0, 0, 0, 0.1);
-  width: 40%;
-}
-
-.right {
-  right: 30px;
-  left: auto;
-}
-
-.left {
-  left: 30px;
-}
-
-h2 {
-  overflow: hidden;
-  text-align: center;
-  margin: 20px;
-  text-transform: uppercase;
-}
-
-.main-news {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 25px;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.first-card {
-  width: 25%;
-}
-
-.first-card img {
-  width: 100%;
-}
-
-.first-link-wrap {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
-}
-
-.second-link-wrap {
-  padding: 20px 0;
-}
-
-.second-card {
-  width: 45%;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-}
-.second-card img {
-  width: 100%;
-  height: 300px;
-}
-
-.second-card a {
-  font-size: 24px;
-  /* text-align: center; */
-  display: block;
-  padding: 0 30px;
-}
-
-.second-card p {
-  font-size: 30px;
-  text-align: center;
-}
-.third-card {
-  width: 25%;
-}
-
-.third-card a {
-  display: block;
-  font-weight: 700;
-}
-
-.links {
-  margin-bottom: 20px;
-}
-
-.links h6 {
-  margin-top: 8px;
-  font-weight: 200;
-}
-
-.advertisement{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.advertisement img{
-  width: 100%;
-  height: 15  0px;
-}
-
-.section-2,
-.section-3 {
-  width: 80%;
-  margin: 80px auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
-}
-
-.section-4 {
-  width: 80%;
-  margin: 40px auto;
-}
-
-.row-2 a,
-.row-3 a,
-.row-4 a {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 20px;
-  width: 22%;
-}
-.row-2,
-.row-3,
-.row-4 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.row-2 img,
-.row-3 img,
-.row-4 img {
-  width: 100%;
-  height: 150px;
-}
-
-.section-5 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 150px;
-  padding-top: 0px;
-  padding-bottom: 30px;
-}
-
-.section-5 div:hover {
-  cursor: pointer;
-  background: #eed6b2;
-}
-
-.section-5 .peel {
-  width: 0;
-  height: 0;
-  background-color: white;
-  padding: 0;
-  margin: 8px;
-}
-
-.section-5 div {
-  width: 30px;
-  height: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #f3f3f3;
-  padding: 10px;
-  margin: 3px;
-  border-radius: 3px;
-}
-
-.section-5 .one-link {
-  background: red;
-  border-radius: 3px;
-}
-
-.section-5 .six {
-  width: 50px;
-  height: 40px;
-  border-radius: 3px;
-}
-
-.section-6 {
-  width: 80%;
-  margin: 40px auto;
-  padding-bottom: 50px;
-}
-
-.row-6 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.row-6 a {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 20px;
-  width: 20%;
-}
-.r0w-6 img {
-  width: 100%;
-  height: 150px;
-}
-
-/* RESPONSIVENESS */
-
-@media (max-width: 990px) {
-  .main-news {
-    width: 80%;
-  }
-
-  .advertisement {
-    width: 80%;
-  }
-
-   .advertisement img {
-    width: 100%;
-    object-fit: cover;
-  } 
-
-  .section-2,
-  .section-3 {
-    width: 80%;
-    margin: 80px auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 20px;
-  }
-
-  .section-4 {
-    width: 80%;
-    margin: 40px auto;
-  }
-
-  .section-5 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 90px;
-    padding-top: 0px;
-    padding-bottom: 30px;
-  }
-  
-  .section-6 {
-    width: 80%;
-    margin: 20px auto;
-    padding-bottom: 50px;
-  }
-    .row-6 a {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 20px;
-    width: 43%;
-  }
-}
-
-@media (max-width: 700px) {
-  .row-6 a {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 20px;
-    width: 38%;
-  }
-}
-
-@media (max-width: 644px) {
-  .row-6 a {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .section-2,
-  .section-3 {
-    width: 95%;
-    margin: 40px auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 150px;
-  }
-  
-  @media (max-width: 500px) {
-    .right {
-      right: 5px;
-      left: auto;
-    }
-    
-    .left {
-      left: 5px;
-    }
-    
-    .main-news{
-      width: 70%;
-      display: flex;
-     flex-direction: column;
-     justify-content: center;
-    }
-
-     a {
-      text-decoration: none;
-      color: #000;
-    }
-    
-    .first-card {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    
-    .first-card img {
-      width: 100%;
-    }
-    
-    .first-link-wrap {
-     border: none;
-      padding-bottom: 20px;
-    }
-    
-    .second-link-wrap {
-      padding: 20px 0;
-    }
-    
-    .second-card {
-      width: 100%;
-      border: none;
-      margin-bottom: 10px ;
-    }
-    .second-card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-    
-    .second-card a {
-      font-size: 12px;
-      /* text-align: center; */
-      display: block;
-      /* padding: 0 30px; */
-      margin-bottom: 20px;
-    }
-    
-    .second-card p {
-      font-size: 14px;
-      text-align: center;
-      font-weight: 700;
-    }
-    .third-card {
-      width: 100%;
-    }
-    
-    .third-card a {
-      display: block;
-      font-weight: 700;
-    }
-    
-    .links {
-      margin-bottom: 20px;
-    }
-    
-    .links h6 {
-      margin-top: 8px;
-      font-weight: 200;
-    }
-    }
- 
-.second-card a {
-  font-size:10px;
-  /* text-align: center; */
-  display: block;
-  padding: 0 30px;
-  font-size: 12px;
-}
-
-.advertisement {
-  width: 70%;
-}
-
- .advertisement img{
-  width: 100%;
-  background-color: #2bb7da;
-} 
-
-.section-2,
-.section-3 {
-  width: 70%;
-  margin: 20px auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
-}
-
-.section-4 {
-  width: 80%;
-  margin: 30px auto;
-  padding-bottom: 0px;
-}
-.row-2 a,
-.row-3 a,
-.row-4 a {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 20px;
-  width: 45%;
-  font-size: 12px;
-}
-.row-2,
-.row-3,
-.row-4 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-}
-.row-2 img,
-.row-3 img,
-.row-4 img {
- object-fit: cover;
-}
-
-.section-5 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 50px;
-  padding-bottom: 20px;
-}
-
-.section-6 {
-  width: 80%;
-  margin: 10px auto;
-  padding-bottom: 50px;
-}
-
-.row-6 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center
-}
-
-.row-6 a {
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  width: 60%;
-  text-align: center;
-}
-.r0w-6 img {
- object-fit: cover;
-}
-}
-
-
-/* //FOOTER// */
 footer {
   background-color: black;
   padding-top: 1rem;
@@ -705,7 +244,6 @@ footer hr {
   width: 90%;
   margin: 1rem auto 1rem auto;
 }
-
 .copyright {
   text-align: center;
   color: white;
@@ -846,15 +384,14 @@ footer hr {
     display: flex;
     justify-content: center;
   }
-
   .copyright {
     font-weight: 700;
-    line-height: 1.4;
+    /* line-height: 1.4; */
     font-size: 0.8rem;
   }
 }
-/*Responsiveness For very small devices*/
 @media (max-width: 350px) {
+  /*For very small devices*/
   .footer-middle-section {
     justify-content: center;
   }
@@ -875,3 +412,322 @@ footer hr {
     margin-top: 1rem;
   }
 }
+/*this my own styling section for the home page layout*/
+
+/*
+*{
+    margin:0;
+    padding:0;
+}
+*/
+/*
+body {
+    margin:0;
+    padding:0;
+}
+*/
+
+/*
+img {
+    max-width:100%;
+    border:0;
+}
+
+*/
+
+a {
+  color: black;
+}
+
+.section-heading-separator {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.section-heading-separator .heading-title {
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+  color: black;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  padding: 0.25em 1em;
+}
+
+.heading-title a {
+  text-decoration: none;
+  color: black;
+}
+.section-heading-separator fieldset {
+  width: 100%;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top: 2%;
+}
+/*this section affects the overall width of the main-news-contect-section on the row layout*/
+
+.row {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*  border:2px solid tomato; */
+}
+
+/* this media query aligns all items in a column layout, however the div class must have a pre class name="row"
+  while the .column affects the column layout in the row section which is the left-news-content, the middle-news-content and 
+  the right-news-content, to take a width of 100% 
+*/
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .column .group-news-content-middle-main {
+    width: 100%;
+  }
+
+  /*this line of code affects the last child of the list items to not have a bottom border*/
+  .list-outline .list-item:last-child {
+    margin-bottom: 10.5%;
+  }
+}
+
+/*STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT*/
+.column {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  min-width: initial;
+}
+
+.list-outline {
+  padding-left: 1.25em;
+  border-left: 2px solid rgb(209, 188, 188);
+}
+
+.list-outline .list-item {
+  margin-bottom: 0.25em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgb(209, 188, 188);
+}
+
+.list-outline .list-item:last-child {
+  border-bottom: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  display: block;
+}
+
+.item-content {
+  margin-bottom: 0px;
+}
+
+.item-content .before-entry-time {
+  margin-bottom: 0.25em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.list-outline .item-content .before-entry-time {
+  position: relative;
+}
+
+.before-entry-time {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 0.825em;
+  color: rgb(90, 80, 80);
+}
+
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.list-outline .item-content .before-entry-time ::before {
+  position: absolute;
+  top: 0;
+  left: -1.875em;
+  height: 0.75em;
+  width: 0.75em;
+  background: green;
+  display: block;
+  border-radius: 50%;
+  content: "";
+}
+
+.entry-time {
+  margin-bottom: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.news-item-content {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.group-news-media-content-left .list-outline .item-content .news-item-content {
+  font-size: 1.0875em;
+}
+
+.news-item-content a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE MIDDLE (CENTER) SECTION*/
+
+.middle-news-content .middle-news-content-image-display {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.middle-news-content-image-display {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.middle-news-content-image-display img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-news-media-content-left
+  .middle-news-content
+  .middle-news-content-headline {
+  line-height: 1.2;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0.865em;
+  font-size: 1.55em;
+}
+
+.group-news-media-content-left .group-news-content-middle-main {
+  margin-bottom: 10.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+}
+
+/**STYLING THE NEWS CONTENT SECTION STARTING FROM THE LEFT - NOW THE RIGHT HAND SECTION 
+(WITH A FLIP IN THE POSITION AND FONT STYLING OF THE div class="entry-time" and the h3 class="news-item-content")*/
+
+/*TRENDING VIDEOS CONTENT SECTION STYLING*/
+
+.video-content-section {
+  border-top: 2px solid rgb(134, 121, 121);
+  margin-bottom: 1.865em;
+  margin-top: 2%;
+}
+
+.video-content-title {
+  text-align: center;
+}
+
+.video-content-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  /* border:2px solid black; */
+  align-items: center;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.video-content-card {
+  padding: 10px;
+  flex-basis: 10%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.video-content-card a img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .column .group-news-content-middle-main {
+    width: 100%;
+  }
+}
+
+/*this is the styling for navigating to other videos using the more videos button*/
+.more-videos-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.more-videos-button .more-videos-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(10, 83, 26);
+  font-family: "poppins" sans-serif;
+}
+
+/*the next section is the metro and business section this will have the metro name attached to .metro-(group-news-media-content-left) all styling class*/
+
+.metro-group-news-media-content-left {
+  margin-bottom: 5%;
+  padding-top: 5%;
+  border-top: 2px solid rgb(134, 121, 121);
+}
+
+.metro-group-news-media-content-left .group-news-content-middle-main {
+  margin-bottom: 5.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+}
+
+.metro-group-news-media-content-left
+  .middle-news-content
+  .middle-news-content-headline {
+  line-height: 1.2;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0.865em;
+  font-size: 1.55em;
+}
+
+.metro-group-news-media-content-left
+  .list-outline
+  .item-content
+  .news-item-content {
+  font-size: 1.0875em;
+}
+
+/*this is the end my own css styling section for the home page layout*/
