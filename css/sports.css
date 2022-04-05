@@ -9,16 +9,15 @@
 a {
   text-decoration: none;
 }
-/* Header Section */
+body{
+  margin: 0;
+}
+
+
 header {
+  margin-right: 0;
+  margin-left: 0;
   background: linear-gradient(to right, #2bb7da, #31d35c);
-  height: 90px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  background: #2bb7da;
-  z-index: 5;
 }
 nav {
   display: flex;
@@ -39,9 +38,6 @@ nav {
 .footer-logo span {
   color: lawngreen;
   font-size: 1.4rem;
-}
-.nav-link {
-  font-size: 25px;
 }
 .nav-toggle {
   display: none;
@@ -64,6 +60,7 @@ nav {
 /* hover styles for the nav-link */
 .nav-link {
   position: relative;
+  font-size: 25px;
 }
 .nav-link:before {
   content: "";
@@ -107,7 +104,6 @@ nav {
 }
 
 .section-heading-separator .heading-title {
-  /* font-size: 1.2em;  */
   font-size: 2em;
   font-family: "Times New Roman", Times, serif;
   line-height: 1.2;
@@ -129,17 +125,13 @@ nav {
   border-left: none;
   border-right: none;
   border-bottom: none;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 main {
   display: flex;
   justify-content: space-between;
-  /* margin-left: 0.5em; */
   width: 100%;
   text-align: center;
-  /* border-left: none;
-  border-right: none;
-  border-bottom: none; */
   border: none;
 }
 
@@ -544,6 +536,7 @@ footer hr {
 
 /* FOR ALL SCREEN SIZES  */
 
+
 @media screen and (min-width: 1024px) and (max-width: 1353px) {
   main{
     display: flex;
@@ -579,7 +572,7 @@ footer hr {
     width: 150px;
     height: 140px;
   }
-  
+
   .right-section, .left-section, .middle-section{
     width: 100%;
     text-align: center;
@@ -619,9 +612,8 @@ footer hr {
     width: 200px;
     height: 449px;
   }
-
-    
 } 
+
 /* //MEDIUM DEVICES LIKE LANDSCAPE TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   main{
@@ -716,7 +708,11 @@ footer hr {
     line-height: 1.2;
   }
 }
-
+@media screen and (min-width: 751px) and (max-width: 900px) {
+  .nav-link {
+    font-size: 18px;
+}
+}
 @media (max-width: 750px) {
   header {
     position: relative;
@@ -774,12 +770,15 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background-color: black;
     opacity: 0.9;
-    height: 65vh;
+    height: 72vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
   .nav-call-to-action {
     display: none;
+  }
+  .nav-link{
+    font-size: 20px;
   }
   footer {
     font-size: 1rem;
@@ -867,11 +866,11 @@ footer hr {
     margin-top: 20px;
   }
   .sports-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .main-news{
@@ -893,8 +892,8 @@ footer hr {
     padding-left: 10px;
   }
   .middle-card-image{
-  width: 100%;
-  height: 300px;
+    width: 100%;
+    height: 300px;
   }
   .middle-title {
     font-size: 16px;
@@ -949,20 +948,20 @@ footer hr {
     gap: 10px;
   }
   .section-second-news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
   }
   .section-1{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .content-container{
     display: flex;
@@ -1279,7 +1278,6 @@ footer hr {
     }
     
 }
-
 /*Responsiveness For very small devices*/
 @media (max-width: 350px) {
   .footer-middle-section {
@@ -1302,3 +1300,5 @@ footer hr {
     margin-top: 1rem;
   }
 }
+
+

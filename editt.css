@@ -1,0 +1,182 @@
+/* importing font family-poppins */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-wrapper{
+    background-color: #f3f4f6;
+    transition: 0.1s;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.light{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 10px;
+}   
+.soft{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+    
+.live{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.life{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.life-one{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.life-two{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.height{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.height-one{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.height-two{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.size{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.size-one{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.size-two{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+
+.field{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.field-one{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.field-two{
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
+}
+.profile{
+    margin-left: 50px;
+}
+.nam{
+    text-align: center;
+}
+@media(max-width:750px) {
+    .image{
+        flex-direction: column;
+    }
+    .light{
+        flex-direction: column;
+    }
+    .soft{
+        flex-direction: column;
+    }
+    .img{
+        flex-direction: column;
+    }
+}
