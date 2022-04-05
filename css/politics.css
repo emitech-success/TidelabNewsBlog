@@ -408,7 +408,7 @@ a {
   .section-5 {
     display: flex;
     flex-wrap: wrap;
-   padding: 20px;
+    padding: 20px;
   }
   
   .section-6 {
@@ -422,6 +422,7 @@ a {
     margin-bottom: 20px;
     width: 43%;
   }
+
   
   
   .image{
@@ -439,7 +440,6 @@ a {
   .first-advertisement img{
     width: 200px;
   }
-  
 }
 
 @media (max-width: 700px) {
@@ -466,8 +466,9 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 150px;
   }
+
 }
- 
+
   @media (max-width: 500px) {
     .right {
       right: 5px;
@@ -549,7 +550,8 @@ a {
       margin-top: 8px;
       font-weight: 200;
     }
-    
+  }
+
  
 .second-card a {
   font-size:10px;
@@ -635,6 +637,7 @@ a {
 .r0w-6 img {
  object-fit: cover;
 }
+
 
 .title {
   width: 90%;
