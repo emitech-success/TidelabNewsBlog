@@ -13,6 +13,8 @@ header {
   margin-top: -0.45rem;
   margin-left: -0.35rem;
   margin-right: -0.45rem;
+  position: sticky;
+  top: 0;
 }
 nav {
   display: flex;
@@ -33,6 +35,9 @@ nav {
 .footer-logo span {
   color: lawngreen;
   font-size: 1.4rem;
+}
+.revert-to-homepage {
+  text-decoration: none;
 }
 .nav-toggle {
   display: none;
@@ -69,7 +74,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  color: lawngreen;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -80,6 +85,10 @@ nav {
 .nav-call-to-action a {
   border: 2px solid white;
   border-radius: 5px;
+}
+.nav-call-to-action .subscribe-btn:hover,
+.nav-call-to-action .search-btn:hover {
+  border-color: lawngreen;
 }
 .nav-call-to-action a:first-child {
   padding: 0.5rem 0.5rem;
@@ -305,15 +314,8 @@ code for the third section*/
   padding-bottom: 40px;
 }
 
-/* //FOOTER SECTION// */
+/* //HEADER SECTION// */
 
-footer {
-  background-color: black;
-  padding-top: 1rem;
-  margin-bottom: -2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
 }
@@ -561,7 +563,8 @@ footer hr {
 /* //RESPONSIVE DESIGN// */
 @media (max-width: 750px) {
   header {
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .header-logo {
     margin-left: -1.5rem;
@@ -593,7 +596,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 20px;
+    top: 97px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -616,7 +619,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background-color: black;
     opacity: 0.9;
-    height: 65vh;
+    height: 50vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -628,6 +631,7 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;

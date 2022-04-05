@@ -9,6 +9,8 @@
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
+  position: sticky;
+  top: 0;
 }
 nav {
   display: flex;
@@ -29,6 +31,9 @@ nav {
 .footer-logo span {
   color: lawngreen;
   font-size: 1.4rem;
+}
+.revert-to-homepage {
+  text-decoration: none;
 }
 .nav-toggle {
   display: none;
@@ -65,7 +70,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  color: lawngreen;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -76,6 +81,10 @@ nav {
 .nav-call-to-action a {
   border: 2px solid white;
   border-radius: 5px;
+}
+.nav-call-to-action .subscribe-btn:hover,
+.nav-call-to-action .search-btn:hover {
+  border-color: lawngreen;
 }
 .nav-call-to-action a:first-child {
   padding: 0.5rem 0.5rem;
@@ -141,15 +150,14 @@ nav {
   font-size: 18px;
   margin-top: 0.5rem;
 }
-.contact-form-group a {
-  display: inline-block;
-  text-decoration: none;
+.contact-form-group .send-btn {
   text-align: center;
   background: linear-gradient(to right, #2bb7da, #31d35c);
   color: white;
   width: 100%;
   margin-top: 1rem;
   padding: 0.7rem 0.8rem;
+  border: none;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
@@ -186,7 +194,6 @@ footer {
   border-radius: 5px;
   padding: 1rem 1.2rem 0.5rem 1.2rem;
   margin-left: 0.3rem;
-  /* width: 60%; */
   text-align: center;
 }
 .footer-form a:hover {
@@ -331,7 +338,8 @@ footer hr {
 /* //RESPONSIVE DESIGN FOR THE HEADER AND FOOTER// */
 @media (max-width: 750px) {
   header {
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .header-logo {
     margin-left: -1.5rem;
@@ -386,7 +394,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background-color: black;
     opacity: 0.9;
-    height: 60vh;
+    height: 50vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -398,6 +406,7 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;
@@ -408,9 +417,6 @@ footer hr {
   }
   .search-button {
     width: 18%;
-  }
-  .foter-form .search-input {
-    padding: 0.8rem;
   }
   .footer-top {
     flex-direction: column;

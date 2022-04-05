@@ -9,6 +9,8 @@
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
+  position: sticky;
+  top: 0;
 }
 nav {
   display: flex;
@@ -29,6 +31,9 @@ nav {
 .footer-logo span {
   color: lawngreen;
   font-size: 1.4rem;
+}
+.revert-to-homepage {
+  text-decoration: none;
 }
 .nav-toggle {
   display: none;
@@ -65,7 +70,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  color: lawngreen;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -76,6 +81,10 @@ nav {
 .nav-call-to-action a {
   border: 2px solid white;
   border-radius: 5px;
+}
+.nav-call-to-action .subscribe-btn:hover,
+.nav-call-to-action .search-btn:hover {
+  border-color: lawngreen;
 }
 .nav-call-to-action a:first-child {
   padding: 0.5rem 0.5rem;
@@ -254,7 +263,8 @@ footer hr {
 /* //RESPONSIVE DESIGN// */
 @media (max-width: 750px) {
   header {
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .header-logo {
     margin-left: -1.5rem;
@@ -321,6 +331,7 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;
