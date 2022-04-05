@@ -1,4 +1,3 @@
-/* Header Section */
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap');
 *{
     margin-right: 0;
@@ -93,13 +92,14 @@ main{
 
 
 .news-section{
-  margin-top: 7rem;
+  margin-top: 9rem;
   margin-left: 10px;
 }
 
 .one{
   font-style: oblique;
   font-size: 15px;
+  margin-top: 20px;
 }
 
 .two{
@@ -126,8 +126,8 @@ main{
 
 .addy-image{
   width: 80%;
-  height: 40rem;
-  margin-bottom: 8rem;  
+  height: 15rem;
+  margin-bottom: 4rem;  
 }
 
 .advert{
@@ -138,7 +138,6 @@ main{
 .ad-image{
   width: 100%;
 }
-
 
 
 

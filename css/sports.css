@@ -977,15 +977,16 @@ footer hr {
     align-items: center;
     width: 100%;
   }
-} */
+} 
+
 @media only screen and (max-width: 479px) {
   main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
   }
+
   .sports-wrapper {
     width: 100%;
     display: flex;
@@ -1103,10 +1104,7 @@ footer hr {
   }
   .body-advert {
     display: contents;
-  }
-  .body-advert-image {
-
-  
+  } 
   .section-news-content-container, .news-content-container {
     display: flex;
     gap: 40px;
