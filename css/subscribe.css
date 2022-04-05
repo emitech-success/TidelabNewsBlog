@@ -9,12 +9,17 @@
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
+  z-index:1;
+  position:sticky;
+	top:0px;
+	left:0px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
+ 
 }
 
 .header-logo h3,
@@ -86,7 +91,10 @@ nav {
 }
 /* //MAIN SECTION/ */
 
-
+html {
+  scroll-behavior:smooth;
+  transition:60s;
+}
 
 body {
     font-size: 1.3125rem;
@@ -105,14 +113,22 @@ body {
 }
 
 
-
+main {
+  margin-top:100px;
+}
 
   .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    z-index: 1;
+   
   }
+
+  .intro-section-overlay .intro-container-content {
+    position:relative;
+    margin-top:20%;
+  }
+  
   .intro {
     background-image:url('https://media.istockphoto.com/photos/retro-blog-bookshelf-with-cozy-interior-picture-id1146554418?b=1&k=20&m=1146554418&s=170667a&w=0&h=OKcK6RlNkwYU4y1xba-hEcXM3IA7itp2pYKDGDT6KAI=');
     background-size: cover;
@@ -131,8 +147,7 @@ body {
   .intro-section-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     position:absolute;
-    top:0;
-    min-height:95vh;
+    min-height:95.685vh;
     width:100%;
     
 }
@@ -183,8 +198,7 @@ body {
 /*service section styling*/
 
 .service-section {
-    margin: 2% 0;
-    min-height: 300px;
+    margin: 0 auto;
     width:95%;
     
     
@@ -630,11 +644,12 @@ padding:10px;
     font-weight:400;
     color:white;
 }
+/*
 .section-five .container {
     z-index:1;
     position:relative;
 }
-
+*/
 .section-five .container .col {
     border-bottom: 1px solid grey;
     
@@ -875,7 +890,10 @@ footer {
   /* //RESPONSIVE DESIGN// */
   @media (max-width: 750px) {
     header {
-      position: relative;
+      z-index:1;
+  position:sticky;
+	top:0px;
+	left:0px;
     }
     .header-logo {
       margin-left: -1.5rem;
@@ -928,9 +946,9 @@ footer {
       display: none;
     }
     .nav-checkbox:checked ~ .nav-links .nav-menu {
-      background-color: black;
-      opacity: 0.9;
-      height: 65vh;
+      background: linear-gradient(to right, #2bb7da, #31d35c);
+      opacity: 1.5;
+      height: 55vh;
       padding-top: 2rem;
       border-radius: 3px;
     }
