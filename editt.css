@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 .hero-wrapper{
-    background-color: #f3f4f6;
+    background-color: green;
     transition: 0.1s;
 }
 .edit{
@@ -68,7 +68,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .life-one{
@@ -76,7 +76,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .life-two{
@@ -84,7 +84,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .height{
@@ -92,7 +92,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .height-one{
@@ -100,7 +100,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .height-two{
@@ -108,7 +108,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .size{
@@ -116,7 +116,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .size-one{
@@ -124,7 +124,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .size-two{
@@ -132,7 +132,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 
@@ -141,7 +141,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .field-one{
@@ -149,7 +149,7 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .field-two{
@@ -157,11 +157,11 @@
     background-color: #fff;
     padding: 20px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0px 3px 12px  rgba( 0, 0, 0, 0.15);
 }
 .profile{
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .nam{
     text-align: center;
