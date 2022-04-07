@@ -5,7 +5,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+  transition: 60s;
+}
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
@@ -65,7 +68,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  opacity: 0.85;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -91,7 +94,11 @@ nav {
 }
 /* Contact form styling */
 .contact {
-  background-color: #f3f4f6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)),
+    url(/images/contact1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 4rem 0;
 }
 .form-heading h2 {
@@ -109,6 +116,7 @@ nav {
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
   width: 50%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 .contact-form-group {
   width: 80%;
@@ -141,15 +149,14 @@ nav {
   font-size: 18px;
   margin-top: 0.5rem;
 }
-.contact-form-group a {
-  display: inline-block;
-  text-decoration: none;
+.contact-form-group .send-btn {
   text-align: center;
   background: linear-gradient(to right, #2bb7da, #31d35c);
   color: white;
   width: 100%;
   margin-top: 1rem;
   padding: 0.7rem 0.8rem;
+  border: none;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
@@ -363,7 +370,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 20px;
+    top: 17px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -371,8 +378,8 @@ footer hr {
 
   li {
     display: none;
-    padding: 0.2rem 1rem 0.2rem;
-    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -384,9 +391,9 @@ footer hr {
     display: none;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu {
-    background-color: black;
-    opacity: 0.9;
-    height: 60vh;
+    background: linear-gradient(to right, #2bb7da, #31d35c);
+    opacity: 1.5;
+    height: 63vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -398,7 +405,9 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
+
   .footer-form a {
     margin-left: 0.3rem;
     padding: 0.8rem 0.95rem 0.8rem 0.95rem;

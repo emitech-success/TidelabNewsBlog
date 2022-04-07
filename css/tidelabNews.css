@@ -4,6 +4,10 @@
     font-family: "Poppins", sans-serif;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  transition: 30s;
+}
 
 /* //HEADER SECTION// */
 header {
@@ -41,8 +45,34 @@ nav {
 }
 .nav-menu li a,
 .nav-call-to-action a {
+  text-decoration: none;
+  color: white;
+}
+/* hover styles for the nav-link */
+.nav-link {
+  position: relative;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 5px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: -1.4625rem;
+  opacity: 0;
+}
+.nav-link:hover {
+  opacity: 0.75;
+}
+.nav-link:hover::before {
+  opacity: 0.75;
+
     text-decoration: none;
     color: white;
+
 }
 .nav-call-to-action {
     margin-right: 2rem;
@@ -408,16 +438,21 @@ footer hr {
   }
   .nav-links {
     position: absolute;
+/*     margin-top: 2.76rem;
+    top: 13px; */
+    right: 0;
+
     margin-top: 3.3rem;
     /* left: 50%; */
     top: 20px;
+
     width: 100%;
   }
 
   li {
     display: none;
-    padding: 0.2rem 1rem 0.2rem;
-    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -429,9 +464,13 @@ footer hr {
     display: none;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu {
-    background-color: black;
+    background: linear-gradient(to right, #2bb7da, #31d35c);
+    opacity: 1.5;
+/*     height: 63vh; */
+/*     background-color: black; */
     opacity: 0.9;
     height: 94vh;
+
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -440,6 +479,21 @@ footer hr {
   }
   footer {
     font-size: 1rem;
+  }
+
+  .footer-form {
+    margin-top: 0.5rem;
+    width: 80%;
+  }
+  .footer-form a {
+    margin-left: 0.3rem;
+    padding: 0.8rem 0.95rem 0.8rem 0.95rem;
+  }
+  .form-search-wrapper {
+    width: 80%;
+  }
+  .search-button {
+    width: 18%;
   }
   .footer-call-to-action a {
     padding: 0.6rem 0.5rem 0.2rem 0.5rem;

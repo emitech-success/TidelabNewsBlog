@@ -5,20 +5,23 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  transition: 60s;
+}
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
-  z-index:1;
-  position:sticky;
-	top:0px;
-	left:0px;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  left: 0px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
- 
 }
 
 .header-logo h3,
@@ -69,7 +72,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  opacity: 0.85;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -864,10 +867,10 @@ footer hr {
 
 @media (max-width: 750px) {
   header {
-    z-index:1;
-position:sticky;
-top:0px;
-left:0px;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    left: 0px;
   }
   .header-logo {
     margin-left: -1.5rem;
@@ -899,7 +902,7 @@ left:0px;
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 20px;
+    top: 17px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -907,8 +910,8 @@ left:0px;
 
   li {
     display: none;
-    padding: 0.2rem 1rem 0.2rem;
-    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -922,7 +925,7 @@ left:0px;
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 55vh;
+    height: 63vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -934,6 +937,7 @@ left:0px;
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;

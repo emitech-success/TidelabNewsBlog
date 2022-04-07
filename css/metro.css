@@ -8,8 +8,9 @@
 }
 /* Header Section */
 header {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: -0.6rem;
+  margin-left: -0.35rem;
+  margin-top: -0.4rem;
   background: linear-gradient(to right, #2bb7da, #31d35c);
 }
 nav {
@@ -67,7 +68,7 @@ nav {
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  opacity: 0.85;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -1313,6 +1314,8 @@ footer {
   background-color: black;
   padding-top: 1rem;
   margin-bottom: -2rem;
+  margin-left: -0.35rem;
+  margin-right: -0.35rem;
 }
 
 .footer-top {
@@ -1508,7 +1511,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 20px;
+    top: 17px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -1517,7 +1520,7 @@ footer hr {
   li {
     display: none;
     padding: 0.2rem 1rem 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -1529,9 +1532,9 @@ footer hr {
     display: none;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu {
-    background-color: black;
-    opacity: 0.9;
-    height: 65vh;
+    background: linear-gradient(to right, #2bb7da, #31d35c);
+    opacity: 1.5;
+    height: 63vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -1543,6 +1546,7 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;
