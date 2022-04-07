@@ -744,7 +744,6 @@ footer hr {
     top: 19px;
     right: 0;
     width: 100%;
-    z-index: 100;
   }
 
   li {
@@ -764,10 +763,14 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 50vh;
+    height: 52vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
+  .section-heading-separator .heading-title {
+    z-index: -1;
+  }
+
   .nav-call-to-action {
     display: none;
   }
@@ -1166,7 +1169,6 @@ footer hr {
 }
 
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
-
 
 /* @media only screen and (max-width: 479px){
     main{

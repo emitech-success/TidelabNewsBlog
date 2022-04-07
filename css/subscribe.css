@@ -53,27 +53,11 @@ nav {
   color: white;
 }
 /* hover styles for the nav-link */
-.nav-link {
-  position: relative;
-}
-.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  display: block;
-  height: 5px;
-  background: black;
-  left: 0;
-  right: 0;
-  bottom: -1.4625rem;
-  opacity: 0;
-}
+
 .nav-link:hover {
   opacity: 0.85;
 }
-.nav-link:hover::before {
-  opacity: 0.75;
-}
+
 .nav-call-to-action {
   margin-right: 2rem;
 }
@@ -898,7 +882,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 60vh;
+    height: 52vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
