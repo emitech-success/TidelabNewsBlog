@@ -98,7 +98,14 @@ nav {
   padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
 
-/* MINOR SECTION */
+/* MAIN SECTION */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap");
+*{
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins", sans-serif; 
+}
 
 .minor-news-wrapper {
   display: flex;
@@ -139,6 +146,71 @@ nav {
   font-weight: normal;
   font-size: 15px;
 }
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper{
+  width: 80%;
+}
+
+.news-image{
+  width: 90%;
+  margin-top: 20px;
+  
+}
+
+
+.news-section{
+  margin-top: 7rem;
+  margin-left: 10px;
+}
+
+.one{
+  font-style: oblique;
+  font-size: 15px;
+}
+
+.two{
+  color: #2bb7da;
+}
+
+.quest{
+  border-style: 1px, cadetblue, solid;
+  background-color: lightgray;
+  padding: 2px 0px 2px 7px;
+}
+
+.ipolowo{
+  font-style: italic;
+}
+.question{
+  color:cadetblue;
+  font-style: italic;
+ 
+}
+.ad-wrapper{
+  width: 20%;
+}
+
+.addy-image{
+  width: 80%;
+  height: 40rem;
+  margin-bottom: 8rem;  
+}
+
+.advert{
+  text-align: center;
+  font-size: 8px;
+}
+
+.ad-image{
+  width: 100%;
+}
+
+
 
 /* //FOOTER SECTION// */
 
