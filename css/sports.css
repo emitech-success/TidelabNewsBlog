@@ -6,13 +6,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  transition: 30s;
+}
 a {
   text-decoration: none;
 }
-body{
+body {
   margin: 0;
 }
-
 
 header {
   margin-right: 0;
@@ -71,11 +74,11 @@ nav {
   background: black;
   left: 0;
   right: 0;
-  bottom: -1.4625rem;
+  bottom: -2.3825rem;
   opacity: 0;
 }
 .nav-link:hover {
-  color: black;
+  opacity: 0.85;
 }
 .nav-link:hover::before {
   opacity: 0.75;
@@ -536,18 +539,17 @@ footer hr {
 
 /* FOR ALL SCREEN SIZES  */
 
-
 @media screen and (min-width: 1024px) and (max-width: 1353px) {
-  main{
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  .body-advert-image{
+  .body-advert-image {
     width: 600px;
-  } 
-  .main-news{
+  }
+  .main-news {
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -568,16 +570,19 @@ footer hr {
     width: 150px;
     height: 140px;
   }
-  .modified-img{
+  .modified-img {
     width: 150px;
     height: 140px;
   }
 
-  .right-section, .left-section, .middle-section{
+  .right-section,
+  .left-section,
+  .middle-section {
     width: 100%;
     text-align: center;
   }
-  .section-title, .content-wrapper{
+  .section-title,
+  .content-wrapper {
     border-radius: 5px;
     width: 150px;
     font-size: 17px;
@@ -586,7 +591,8 @@ footer hr {
     font-size: 15px;
     width: 150px;
   }
-  .section-news-content-container, .news-content-container {
+  .section-news-content-container,
+  .news-content-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -612,31 +618,31 @@ footer hr {
     width: 200px;
     height: 449px;
   }
-} 
+}
 
 /* //MEDIUM DEVICES LIKE LANDSCAPE TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  main{
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  .advertisment{
+  .advertisment {
     display: none;
   }
-  .body-advert{
+  .body-advert {
     visibility: visible;
   }
-  .body-advert{
+  .body-advert {
     display: contents;
   }
-  .body-advert-image{
+  .body-advert-image {
     width: 200px;
     height: 50px;
   }
-  
-  .main-news{
+
+  .main-news {
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -656,16 +662,19 @@ footer hr {
     width: 150px;
     height: 150px;
   }
-  .modified-img{
+  .modified-img {
     width: 150px;
     height: 150px;
   }
-  
-  .right-section, .left-section, .middle-section{
+
+  .right-section,
+  .left-section,
+  .middle-section {
     width: 100%;
     text-align: center;
   }
-  .section-news-content-container, .news-content-container {
+  .section-news-content-container,
+  .news-content-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -691,9 +700,10 @@ footer hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px
+    padding-left: 10px;
   }
-  .section-title, .content-wrapper{
+  .section-title,
+  .content-wrapper {
     border-radius: 5px;
     width: 150px;
     font-size: 17px;
@@ -702,7 +712,8 @@ footer hr {
     font-size: 15px;
     width: 150px;
   }
-  .section-title h3 a, .content-wrapper h3 a{
+  .section-title h3 a,
+  .content-wrapper h3 a {
     width: 150px;
     font-size: 12px;
     line-height: 1.2;
@@ -711,7 +722,7 @@ footer hr {
 @media screen and (min-width: 751px) and (max-width: 900px) {
   .nav-link {
     font-size: 18px;
-}
+  }
 }
 @media (max-width: 750px) {
   header {
@@ -747,16 +758,16 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 20px;
+    top: 19px;
     right: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
   }
 
   li {
     display: none;
-    padding: 0.2rem 1rem 0.2rem;
-    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -768,16 +779,16 @@ footer hr {
     display: none;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu {
-    background-color: black;
-    opacity: 0.9;
-    height: 72vh;
+    background: linear-gradient(to right, #2bb7da, #31d35c);
+    opacity: 1.5;
+    height: 63vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
   .nav-call-to-action {
     display: none;
   }
-  .nav-link{
+  .nav-link {
     font-size: 20px;
   }
   footer {
@@ -785,6 +796,7 @@ footer hr {
   }
   .footer-form {
     margin-top: 0.5rem;
+    width: 80%;
   }
   .footer-form a {
     margin-left: 0.3rem;
@@ -858,7 +870,7 @@ footer hr {
 
 /* //SMALL DEVICES LIKE POTRAIT TABLET,LARGE PHONE */
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  main{
+  main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -873,25 +885,27 @@ footer hr {
     justify-content: center;
   }
 
-  .main-news{
+  .main-news {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .right-section, .left-section, .middle-section{
+  .right-section,
+  .left-section,
+  .middle-section {
     width: 100%;
     text-align: center;
   }
-  .left-section{
-  padding-left: 10px;
-  padding-right: 10px;
+  .left-section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .middle-section{
+  .middle-section {
     border: none;
     padding-left: 10px;
   }
-  .middle-card-image{
+  .middle-card-image {
     width: 100%;
     height: 300px;
   }
@@ -899,7 +913,7 @@ footer hr {
     font-size: 16px;
     text-align: center;
   }
-  .news-wrapper{
+  .news-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -907,7 +921,7 @@ footer hr {
     gap: 10px;
     margin-top: 10px;
   }
-  .second-news-container{
+  .second-news-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -915,7 +929,7 @@ footer hr {
     margin-top: 10px;
     gap: 10px;
   }
-  .section-news-content-container{
+  .section-news-content-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -923,7 +937,7 @@ footer hr {
     margin-top: 10px;
     gap: 50px;
   }
-  .minor-news-wrapper{
+  .minor-news-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -931,7 +945,7 @@ footer hr {
     margin-top: 20px;
     padding: 10px;
   }
-  .second-news-container{
+  .second-news-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -955,7 +969,7 @@ footer hr {
     margin-top: 10px;
     gap: 10px;
   }
-  .section-1{
+  .section-1 {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -963,12 +977,12 @@ footer hr {
     align-items: center;
     width: 100%;
   }
-  .content-container{
+  .content-container {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
   }
-  .modified-part{
+  .modified-part {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -989,12 +1003,12 @@ footer hr {
   .body-advert {
     display: contents;
   }
-  
-  .body-advert-image{
-      width: 200px;
-      height: 50px;
+
+  .body-advert-image {
+    width: 200px;
+    height: 50px;
   }
-} 
+}
 @media only screen and (max-width: 479px) {
   main {
     display: flex;
@@ -1121,40 +1135,40 @@ footer hr {
   .body-advert {
     display: contents;
   }
-  
-  .body-advert-image{
-      width: 200px;
-      height: 50px;
+
+  .body-advert-image {
+    width: 200px;
+    height: 50px;
   }
-  
-  .section-news-content-container, .news-content-container {
+
+  .section-news-content-container,
+  .news-content-container {
     display: flex;
     gap: 40px;
     margin-top: 20px;
     padding: 10px;
   }
   .modified-img {
-  width: 220px;
-  height: 170px;
+    width: 220px;
+    height: 170px;
   }
-  .horizontal{
+  .horizontal {
     display: none;
   }
-  .advert-inside{
-      width: 300px;
-      margin-left: 0;
+  .advert-inside {
+    width: 300px;
+    margin-left: 0;
   }
-  .advertisment{
-      display: none;
+  .advertisment {
+    display: none;
   }
-  .body-advert{
+  .body-advert {
     visibility: visible;
   }
-  .body-advert{
+  .body-advert {
     display: contents;
   }
-  .body-advert-image{
-
+  .body-advert-image {
     width: 220px;
     height: 50px;
   }
@@ -1165,141 +1179,141 @@ footer hr {
 
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
 
-@media only screen and (max-width: 479px){
-    main{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-    .sports-wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .main-news{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .right-section, .left-section, .middle-section{
-        width: 100%;
-        text-align: center;
-    }
-    .left-section{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .middle-section{
-        border: none;
-        padding-left: 10px;
-    }
-    .middle-card-image{
-      width: 100%;
-      height: 300px;
-    }
-    .middle-title {
-        font-size: 16px;
-        text-align: center;
-    }
-    .news-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .second-news-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-    .section-news-content-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-    .minor-news-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-        padding: 10px;
-    }
-    .second-news-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-    .news-content-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-    .section-second-news-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-    .section-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .modified-img {
-      width: 220px;
-      height: 170px;
-    }
-    .horizontal{
-      display: none;
-    }
-    .advert-inside{
-        width: 300px;
-        margin-left: 0;
-        
-    }
-    .advertisment{
-        display: none;
-    }
-    .body-advert{
-      visibility: visible;
-    }
-    .body-advert{
-      display: contents;
-    }
-    .body-advert-image{
-      width: 220px;
-      height: 50px;
-    }
-    .adnammy {
-      display: flex;
-      flex-direction: column;
-      padding-left: 0px
-    }
-    
+@media only screen and (max-width: 479px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .sports-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-section,
+  .left-section,
+  .middle-section {
+    width: 100%;
+    text-align: center;
+  }
+  .left-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .middle-section {
+    border: none;
+    padding-left: 10px;
+  }
+  .middle-card-image {
+    width: 100%;
+    height: 300px;
+  }
+  .middle-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  .news-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .second-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .section-news-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .minor-news-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .second-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .news-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .section-second-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .modified-img {
+    width: 220px;
+    height: 170px;
+  }
+  .horizontal {
+    display: none;
+  }
+  .advert-inside {
+    width: 300px;
+    margin-left: 0;
+  }
+  .advertisment {
+    display: none;
+  }
+  .body-advert {
+    visibility: visible;
+  }
+  .body-advert {
+    display: contents;
+  }
+  .body-advert-image {
+    width: 220px;
+    height: 50px;
+  }
+  .adnammy {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
 }
 /*Responsiveness For very small devices*/
 @media (max-width: 350px) {
@@ -1323,5 +1337,3 @@ footer hr {
     margin-top: 1rem;
   }
 }
-
-
