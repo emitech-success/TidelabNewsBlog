@@ -1165,7 +1165,7 @@ footer hr {
 
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
 
-@media only screen and (max-width: 479px){
+/* @media only screen and (max-width: 479px){
     main{
         display: flex;
         flex-direction: row;
@@ -1300,7 +1300,7 @@ footer hr {
       padding-left: 0px
     }
     
-}
+} */
 /*Responsiveness For very small devices*/
 @media (max-width: 350px) {
   .footer-middle-section {
