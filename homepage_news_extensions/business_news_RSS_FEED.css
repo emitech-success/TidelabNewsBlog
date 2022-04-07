@@ -131,11 +131,14 @@ nav {
   text-align:center;
   color:rgb(107, 94, 94)
 }
-.address-column-section p:last-child {
-  border-bottom: 2px solid rgb(134, 121, 121);
+
+.video-content-card p {
+  padding-bottom:15px;
+  line-height:1.2em;
+  font-size:1.265em;
+  text-align:center;
+  color:rgb(107, 94, 94)
 }
-
-
 
 
 .video-content-title {
@@ -172,7 +175,7 @@ nav {
   width:90%;
   height:90%;
   padding-bottom:20px;
-  border-bottom: 2px solid rgb(134, 121, 121);
+/*  border-bottom: 2px solid rgb(134, 121, 121); */
 }
 
 
