@@ -376,7 +376,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 50vh;
+    height: 52vh;
     padding-top: 2rem;
     border-radius: 3px;
   }

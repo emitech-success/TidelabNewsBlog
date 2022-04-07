@@ -17,6 +17,7 @@ header {
   left: 0px;
   margin-left: -0.39rem;
   margin-right: -0.39rem;
+  margin-top: -0.45rem;
 }
 nav {
   display: flex;
@@ -491,7 +492,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 50vh;
+    height: 52vh;
     padding-top: 2rem;
     border-radius: 3px;
   }

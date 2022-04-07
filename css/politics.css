@@ -387,10 +387,10 @@ a {
     width: 80%;
   }
 
-   .advertisement img {
+  .advertisement img {
     width: 100%;
     object-fit: cover;
-  } 
+  }
 
   .section-2,
   .section-3 {
@@ -410,34 +410,32 @@ a {
     flex-wrap: wrap;
     padding: 20px;
   }
-  
+
   .section-6 {
     width: 80%;
     margin: 20px auto;
     padding-bottom: 50px;
   }
-    .row-6 a {
+  .row-6 a {
     display: block;
     font-weight: 500;
     margin-bottom: 20px;
     width: 43%;
   }
 
-  
-  
-  .image{
+  .image {
     width: 95%;
     margin: 0px auto;
     display: flex;
     gap: 40px;
   }
-  
-  .image img{
+
+  .image img {
     width: 80%;
     height: 450px;
   }
-  
-  .first-advertisement img{
+
+  .first-advertisement img {
     width: 200px;
   }
 }
@@ -466,95 +464,93 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 150px;
   }
-
 }
 
 @media (max-width: 500px) {
   .right {
     right: 5px;
-      left: auto;
+    left: auto;
   }
-    
+
   .left {
-      left: 5px;
-  }
-    
-    .main-news{
-      width: 70%;
-      display: flex;
-     flex-direction: column;
-     justify-content: center;
-    }
-
-     a {
-      text-decoration: none;
-      color: #000;
-    }
-    
-    .first-card {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    
-    .first-card img {
-      width: 100%;
-    }
-    
-    .first-link-wrap {
-     border: none;
-      padding-bottom: 20px;
-    }
-    
-    .second-link-wrap {
-      padding: 20px 0;
-    }
-    
-    .second-card {
-      width: 100%;
-      border: none;
-      margin-bottom: 10px ;
-    }
-    .second-card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-    
-    .second-card a {
-      font-size: 12px;
-      /* text-align: center; */
-      display: block;
-      /* padding: 0 30px; */
-      margin-bottom: 20px;
-    }
-    
-    .second-card p {
-      font-size: 14px;
-      text-align: center;
-      font-weight: 700;
-    }
-    .third-card {
-      width: 100%;
-    }
-    
-    .third-card a {
-      display: block;
-      font-weight: 700;
-    }
-    
-    .links {
-      margin-bottom: 20px;
-    }
-    
-    .links h6 {
-      margin-top: 8px;
-      font-weight: 200;
-    }
+    left: 5px;
   }
 
- 
+  .main-news {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .first-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .first-card img {
+    width: 100%;
+  }
+
+  .first-link-wrap {
+    border: none;
+    padding-bottom: 20px;
+  }
+
+  .second-link-wrap {
+    padding: 20px 0;
+  }
+
+  .second-card {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .second-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .second-card a {
+    font-size: 12px;
+    /* text-align: center; */
+    display: block;
+    /* padding: 0 30px; */
+    margin-bottom: 20px;
+  }
+
+  .second-card p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .third-card {
+    width: 100%;
+  }
+
+  .third-card a {
+    display: block;
+    font-weight: 700;
+  }
+
+  .links {
+    margin-bottom: 20px;
+  }
+
+  .links h6 {
+    margin-top: 8px;
+    font-weight: 200;
+  }
+}
+
 .second-card a {
-  font-size:10px;
+  font-size: 10px;
   /* text-align: center; */
   display: block;
   padding: 0 30px;
@@ -565,10 +561,10 @@ a {
   width: 70%;
 }
 
- .advertisement img{
+.advertisement img {
   width: 100%;
   background-color: #2bb7da;
-} 
+}
 
 .section-2,
 .section-3 {
@@ -603,7 +599,7 @@ a {
 .row-2 img,
 .row-3 img,
 .row-4 img {
- object-fit: cover;
+  object-fit: cover;
 }
 
 .section-5 {
@@ -623,7 +619,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
 
 .row-6 a {
@@ -635,35 +631,33 @@ a {
   text-align: center;
 }
 .r0w-6 img {
- object-fit: cover;
+  object-fit: cover;
 }
-
 
 .title {
   width: 90%;
 }
 
-.title p{
+.title p {
   font-size: 24px;
   font-weight: 800;
 }
 
-.share{
+.share {
   display: flex;
   flex-direction: row;
   gap: 15px;
   margin-top: 15px;
-  }
+}
 
-.share h4{
+.share h4 {
   font-size: 12px;
-  color: #BCAA9F;
+  color: #bcaa9f;
   position: relative;
   top: 30px;
- }
+}
 
-
-.image{
+.image {
   width: 95%;
   margin: 35px auto;
   display: flex;
@@ -671,18 +665,17 @@ a {
   gap: 40px;
 }
 
-.image img{
+.image img {
   width: 95%;
 }
-.first-advertisement img{
-  width: 95%  ;
-
+.first-advertisement img {
+  width: 95%;
 }
-.second-advertisement img{
+.second-advertisement img {
   object-fit: contain;
 }
 
-.news-content{
+.news-content {
   width: 95%;
 }
 
@@ -691,7 +684,6 @@ a {
   padding: 20px;
 }
 /* } */
-
 
 /* //FOOTER// */
 footer {
@@ -1168,8 +1160,7 @@ footer hr {
 
 @media (max-width: 750px) {
   header {
-
-/*     z-index:1;
+    /*     z-index:1;
     position:sticky;
     top:0px;
     left:0px; */
@@ -1178,7 +1169,6 @@ footer hr {
     position: sticky;
     top: 0px;
     left: 0px;
-
   }
   .header-logo {
     margin-left: -1.5rem;
@@ -1233,7 +1223,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 50vh;
+    height: 52vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
