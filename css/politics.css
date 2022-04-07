@@ -195,9 +195,6 @@ h2 {
   height: 100px;
 }
 
-/* .unity-list{
-  margin: 30px auto;
-} */
 .unity-list img {
   width: 65%;
   padding-bottom: 60px;
@@ -560,7 +557,7 @@ a {
     margin-top: 8px;
     font-weight: 200;
   }
-}
+
 
 .second-card a {
   font-size: 10px;
