@@ -1,63 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport News </title>
-    <link rel="stylesheet" href="./css/Spt7.css">
-</head>
-<body>
-    
-    <header>
-        <!-- ADD THE NAVIGATION SECTION HERE -->
-        <nav>
-          <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
-          <label for="nav-checkbox" class="nav-toggle">
-            <svg class="menu" viewbox="0 0 448 512" width="100" title="bars">
-              <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 
-                  67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 
-                  16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 
-                  0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 
-                  16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-            </svg>
-            <svg class="close" viewbox="0 0 384 512" width="100" title="times">
-              <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19
-                  0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
-                  75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28
-                  12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28
-                   32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176
-                  322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 
-                  12.28-32.19 0-44.48L242.72 256z" />
-            </svg>
-          </label>
-          <div class="header-logo">
-            <h3>Elite Blog</h3>
-          </div>
-          <div class="nav-links">
-            <ul class="nav-menu">
-              <li> <a class="nav-link" href="./homepage.html">Home</a></li>
-              <li> <a class="nav-link" href="./tidelabNews.html">TIIDELab</a></li>
-              <li> <a class="nav-link about-link" href="./sports.html">Sports</a></li>
-              <li> <a class="nav-link" href="./politics.html">Politics</a></li>
-              <li> <a class="nav-link" href="./metro.html">Metro Plus</a></li>
-            </ul>
-          </div>
-          <div class="nav-call-to-action">
-            <a href="" class="subscribe-btn">Subscribe</a>
-            <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-search" viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg></a>
-          </div>
-        </nav> 
-   </header>
 
-   
-   
-   <main>
-      <section class="content-wrapper">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport News </title>
+  <link rel="stylesheet" href="../css/sportsCSS/Spt6.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- ADD THE NAVIGATION SECTION HERE -->
+    <nav>
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox" class="nav-toggle">
+        <svg class="menu" viewbox="0 0 448 512" width="100" title="bars">
+          <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 
+                67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 
+                16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 
+                0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 
+                16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        </svg>
+        <svg class="close" viewbox="0 0 384 512" width="100" title="times">
+          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19
+                0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28
+                75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28
+                12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28
+                 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176
+                322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 
+                12.28-32.19 0-44.48L242.72 256z" />
+        </svg>
+      </label>
+      <div class="header-logo">
+        <h3>El<span>ite</span> Blog</h3>
+      </div>
+      <div class="nav-links">
+        <ul class="nav-menu">
+          <li> <a class="nav-link" href="../index.html">Home</a></li>
+          <li> <a class="nav-link" href="../tidelabNews.html">TIIDELab</a></li>
+          <li> <a class="nav-link about-link" href="../sports.html">Sports</a></li>
+          <li> <a class="nav-link" href="../politics.html">Politics</a></li>
+          <li> <a class="nav-link" href="../metro.html">Metro Plus</a></li>
+          <li> <a class="nav-link" href="../editt.html">Editorial</a></li>
+        </ul>
+      </div>
+      <div class="nav-call-to-action">
+        <a href="" class="subscribe-btn">Subscribe</a>
+        <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg></a>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <section class="head-title">
+      <h1>Chelsea’s Tuchel divorces journalist wife after 13 years</h1>
+    </section>
+
+    <section class="social-media-links">
+
+      <div class="social-links">
+        <p>Kindly share this story:</p>
+        <button class="social-btn"><a href="https://twitter.com/TIIDELab" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter"
+              viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685
+              0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0
+              0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0
+              0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203
+               0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1
+                .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a></button>
+        <button class="social-btn"><a href="https://web.facebook.com/pg/TIIDELab" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926
+               7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 
+               1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354
+                2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+          </a></button>
+        <button class="social-btn"><a href="https://www.linkedin.com/company/tiidelab" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0
+               .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943
+               12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822
+                0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg>
+          </a></button>
+        <button class="social-btn"><a href="https://www.instagram.com/tiidelab" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </a></button>
+
+      </div>
+    </section>
+    <section class="news-wrapper">
+      <section class="cover-container">
+        <section class="main-news">
+          <img class="main-image" src="https://cdn.punchng.com/wp-content/uploads/2022/03/11234225/Thomas-Tuchel.jpg"
+            alt="image">
+          <section class="main-content">
+            <p class="main-content-author">Agency Report</p>
+            <p main-content-date> April 2022</p>
+            <br>
+
+            <!-- //Body Advert// -->
+            <section class="body-advert">
+              <p>Advertisement</p>
+              <a href="https://beacon-nf.rubiconproject.com/beacon/v2/rs/0/3687b6a1-c82c-487d-b852-6f15ff5bcaf9/0/ZXzzkIGkkIHzWtZAsCi6PDgnEdg/https://dsp-trk.eskimi.com/click/e:QA4WDNJPSPdzzxE2xgQ4xkRuWCCl67MZ3wMBqEU3d8xMwWhS-ifQGT191QhKpWlIiYRlVDGNsSk1y5QRHP89ZfRGiX1FwcOUli9vNQPnmvrkWIs4NAAGLdKJ6cJcKrgjtWzeVJnLdyqWsKL266xyqodP2eKmy-_K-9dT2DqqBl_aHF8wF3o685kJJ_gliDVzPHN1oPY8KBELjI8iZLjkOm5Bdrb9z02sBBT72Y-JVdZ0V3M5IfK40qaO37JKi_R0EENmFyNnkcgz5E-5SqJeIsWSH-MAsKUaXKoruYaxThOR2UctahPz-L2oIQgrgDKIhYzX-r0adqjTNlT2dJuzBKpfxcIl_Rax7SCvISW5y7GqH5VtWxI71eTgUltQU4ggcIoyKyHVyquLh-W602s5FR6UbHl1W_iksdtp3MGyVTDlScgn_ewzB2zexqsk5vcRCXj1DUwSHnW63xBkxYkNP4rSGSnpgZfjh1cFP74bpjGxttMuYhghXEeuWv6Xt7fUb-lQRc5UYUNkBZZ-rO8rzWkwHcwtPQn3nIvA05OShLHp1IQ5W5wMwgoCgNT5FT7xkH4tbKgUIvH3JykniX1TeVCKm3Y-GyN6JhrGuLMqh1w?c="
+                target="_blank" rel="noopener noreferrer"><img class="ad-image"
+                  src="https://dsp-media.eskimi.com/upload/70163_1284943541_bbca1918269aa1b938e5ed629bc33a12.jpg"
+                  alt="advert">
+              </a>
+            </section>
+
+            <p class="content-body">Chelsea manager, Thomas Tuchel’and his wife, Sissi, have parted ways after 13 years of marriage.</p>
+            <p class="content-body">This is coming amidst the occupational hazard the German is facing at Chelsea following the sanction on
+              oligarch owner, Roman Abramovich over Russia’s invasion of Ukraine by Vladimir Putin.</p>
+            <p class="content-body">Daily Mail reported that Sissi who gave up her job as a journalist at the German newspaper Süddeutsche
+              Zeitung to bring up their family started the divorce proceedings last week.</p>
+            <p class="content-body">Tuchel has vowed to stick with the club despite The Blues’ inability to sell tickets for games, sign
+              players or give new contracts to existing players, due to the sanctions placed on Abramovich.</p>
+            <p class="content-body">It appears the German can’t save his marriage from crashing despite efforts by the couple to avoid
+              splitting.</p>
+            <!-- //Body Advert// -->
+            <section class="body-advert">
+              <p>Advertisement</p>
+              <a href="https://dsp-trk.eskimi.com/click/e:841Fgp-2gD0iC9V4DCOQNMAggYOG5zW_ZgRhilSkonMxA-97o7nL1CP45I_0n1B2uJoEimtGl4sRUK52ex4LeVcn1QRHBgN4eUWfuCMhFIQnahCe0S2kJ-a1-5kTzQ6DkUa3T4EuOOnG_w80YisUCx1-HAequjdrlQ2VfoUbghePqvCUSWsZ3kL8_lokuFcrI3ic_OByAqhap2RJ5N9_lSSNz4__LBcK3ypKlXa2Forn91BBN05CZuoggZ-iZ5RASk2k_uR3yDw9K9FHMnTKgjvIWj0jVTn7nct9MdopBtcomioB6YiIEI0EbQpztRc4FNWMbDjWGFToyeRFQe-l0oscYZaQvUtJbeleMKelK8nzqTT2hLsirD3os3SK7jf5qduT4QsXjnxGng6wzHUbNdbiJt4gYBBQh83Gyp-P2wX6o4t5nfiwV3vooXfGP4wMFQaVY-0ifqIrmhqXYE8_52ryT9DaQlaL5BDzCIPJ9-1MzyYiXJc17-qit5EAiGUYB5sHf7SYdONSjRtVqjug2gQBz-PsHtm6IG_jz_JuFGYtAU4pR2m2R82b6eTr4LMLV4m5S7Wi76C9dOjEnO14aE-nLAHCDLAd1zIRJxG2Myg8m82Z15xTiqWuDbDGlA0K?dest=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCJr6breZKYvvZHpKr-wbPv5CADoq4ud9mydH064ALwI23ARABIABgt9SDhZQxggEXY2EtcHViLTU2ODk4MDU0NDA3ODIxMjPIAQngAgCoAwGqBJQCT9BeOH9Cnex6dZJw81b_aEHxt7IowXzWZP84kIA_pH9-j1IzC9aY1CDIcYEPa-pFyoSkoM56svwDNA-v5LHvtxq4J_9Ze9XPNoIb5IZXEnp-LhHAv5obTYeXb09eV8fYf_VryjmWMaqmEvklbz5Na3V0VtXzqlr7hshDpJ3zqjASx49NvGk950zKp9RNFrxP-NbtYm8FF-sFovwrOHQ9iHBjvmc8pKMdPLNFyvJb2qpsGpooalwgl3jGWwn5p3La1Cmbny1Lmdyfmb7t0DMSawNcu0I9PFU-t3kFJs85PDWGG4_T0VAnoL1GsXOAK7eh9bp_amFkF0d36gD9I_NBodA7K83lp7IBLtOk5tDRsJSW5R9Y4AQBgAakkcr63bLg0rcBoAYhqAeKmLECqAemvhuoB5bYG6gHqpuxAqgH35-xAtgHANIIBQiAYRAB-gsCCAGADAHQFQGAFwE%26num%3D1%26sig%3DAOD64_16h-WSQXKW3NRivFEg14-tMbOSJg%26client%3Dca-pub-5689805440782123%26adurl%3D&c="
+                target="_blank" rel="noopener noreferrer"><img class="ad-image"
+                  src="https://dsp-media.eskimi.com/upload/68490_3425791217_17960dc898532cc203aa6c7810c9a471.gif"
+                  alt="advert">
+              </a>
+            </section>
+
+            <p class="content-body">According to friends of the couple, ‘all avenues are exhausted’ when it comes to hopes of a
+              reconciliation.</p>
+            <p class="content-body">‘Sissi and Thomas have tried to avoid splitting but in the end, there was no other way,’ said a source.
+            </p>
+            <p class="content-body">‘It is very sad and now it is all about making sure their daughters are the top priority. Papers were
+              lodged last week to get the divorce under way.’</p>
+            <p class="content-body">Former journalist Mrs Tuchel moved to Britain in August, seven months after Tuchel, 48, joined Chelsea
+              from the French team Paris Saint-Germain (PSG).</p>
+            <p class="content-body">He initially stayed in a hotel before the family set up home in Cobham, Surrey, near Chelsea’s training
+              ground.</p>
+            <p class="content-body">The publication believes that Sissi may be entitled to a slice of the earnings of the Chelsea boss, who
+              is reportedly paid £7million a year, in what is expected to be a multi-million-pound divorce deal.</p>
+            <p class="content-body">According to sources, the couple is determined to keep the divorce amicable.</p>
+
+            <!-- //Body Advert// -->
+            <section class="body-advert">
+              <p>Advertisement</p>
+              <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=CdGFb0GlMYqn3DO-H9fgP_Myo4AXbr9-uaY_X6bfZD4Wkm7MEEAEg8NzeRGC3lIOF9DCgAbGE1dYCyAEC4AIAqAMByAMIqgSvAk_Qm5dNTen3Xk9YeQdGydNEOFBc0HVTtZmVzgtriLjvmz8pZTqed7p1wyIocS2uxtMjXdO0f37rXAzoftOwNsVSRcae2sEskdinnW7t1USBIzp1H22Q40KJkNplWDisXUFi4ZbZW2e8bydNsYsMfInFjuvAlK2bgKY33RIX2raFJ9yo3OUHwbisNcq52ATSX5xU-J1lCTTbyzyR5n7e_eOIua11B8tyWKGXohmH9EpDDxn6mP1XaVBLVLY_cRDP1HNAQaHcr0MCLUt8MxNXbCSlgArzRZ3ey8l1yEDtXDCEN41SFHoGp1LAa9uqh7AgH5xPmrW14xZFCW783LErBSlRN7UBut_JTVFP6iu6Pjj-Tc27Za7N5WCS2Wo-r6AZbU4CWuPDOpRXh_K23Vc0mcAEzqrO8dMD4AQBoAYCgAe3-6qpAagHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6SjsQKoB9XJG6gHpr4bqAfz0RuoB5bYG6gHqpuxAqgH35-xAtgHAdIIBwiAYRABGB2xCSEVwt1dA-ZngAoDmAsByAsBuAwB2BMN0BUBmBYB-BYBgBcB&ae=1&num=1&cid=CAASJORogKOWDnzviCl0lGK1s6Opv3c6sTn9JzqWT7QZ50LP54sxFw&sig=AOD64_3Y-xw2J8j3NNeVoZUPJXRYe6yMDA&client=ca-pub-5689805440782123&nx=CLICK_X&ny=CLICK_Y&nb=2&adurl=https://www.betacar.ng/used-car-finance%3Futm_term%3D%26utm_campaign%3D%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D1799160776%26hsa_cam%3D14539493912%26hsa_grp%3D125597619534%26hsa_ad%3D590181996136%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gclid%3DEAIaIQobChMIqZ_VzKf99gIV70MdCR18JgpcEAEYASAAEgJeMfD_BwE"
+                target="_blank" rel="noopener noreferrer"><img class="ad-image"
+                  src="https://tpc.googlesyndication.com/daca_images/simgad/15762739541206025422" alt="advert">
+              </a>
+            </section>
+            <p class="content-body">Just 10 months ago, Mrs Tuchel was seen running across the pitch at Porto’s Estadio do Dragao before
+              leaping into her husband’s arms after Chelsea secured a 1-0 Champions League victory over Manchester City.
+            </p>
+            <p class="content-body">While manager of PSG, Tuchel and his family lived in the upmarket Hauts-de-Seine district of Paris. Mrs
+              Tuchel, 46, has been credited with helping her husband to excel during a managerial career that has seen
+              him win a clutch of trophies in Germany, France and England.</p>
+            <p class="content-body">‘Sissi is no fool, she isn’t your archetypal footballer’s wife, she is a clever woman,’ said the source.
+            </p>
+
+
+          </section>
+        </section>
+      </section>
+
+      <!-- //SIDE ADVERT// -->
+      <section class="side-advertisement">
+        <section>
+          <p>Advertisement <a href="https://s0.2mdn.net/simgad/17301375203678692555" target="_blank"
+              rel="noopener noreferrer"><img class="advert-class-image"
+                src="https://s0.2mdn.net/simgad/17301375203678692555" alt="advert"></a></p>
+        </section>
+        <section>
+          <p>Advertisement <a href="https://tpc.googlesyndication.com/daca_images/simgad/5140752266846021431"
+              target="_blank" rel="noopener noreferrer"><img class="advert-class-image"
+                src="https://tpc.googlesyndication.com/daca_images/simgad/5140752266846021431" alt="advert"></a></p>
+        </section>
+
+        <section>
+          <p>Advertisement <a
+              href="https://googleads.g.doubleclick.net/aclk?sa=L&ai=CNRO9YGFMYqqUBPCfqMwP-L6DkALeraC8aaGn9eHnD4Wkm7MEEAEgpN3aBWC31IOFlDHIAQKpAp5zYTTcoSQ-qAMByAPJBKoEigJP0P6P8nuJPa12ITv2M1c5iLXNLVpPv_BqQU-z_sz6-XYLIjnhrIZp9FZciXTzHL5gSrkxwnvoQCfc8MdkBL70CaLEHsrGx5SkJrjLLsj0xZLEyvZYi1dqYFAN5earTrSB4RYz-kUtsuqFk-uy6zFQIfWES_xODvW1p3_XjmNR-gck49h5tx2Fo078J7yJc6Tjsw1Fnitf_TzWgLZJZwD6iY03NtF6b98x6O_os1EoBQt_-7rQfFcDnrCJCgTbv6BkkDBqC1N0wqvt-SaY6nvbfnZWJxk_qHRCqqn1b-o03maLmeZ06_SeeEiO2_16ExWN9Tsuuk_AMm0umyOV8C9HZc-lAuu32gA5KMAEqu69qOQDoAYCgAf588GgA6gHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6SjsQKoB9XJG6gHpr4bqAfz0RuoB5bYG6gHqpuxAqgH35-xAtgHAdIIBwiAYRABGB-xCcsBx-XnTf9BgAoBmAsByAsB2BMD0BUB-BYBgBcB&ae=1&num=1&sig=AOD64_1aZsvgyh-SKF22_pnDjkbiQLTdOw&client=ca-pub-7167863529667065&nb=17&adurl=https://www.instagram.com/schweppesng/"
+              target="_blank" rel="noopener noreferrer"><img class="advert-class-image"
+                src="https://tpc.googlesyndication.com/daca_images/simgad/8439947568588186766" alt="advert"></a></p>
+        </section>
+
+        <section>
+          <p>Advertisement <a href="https://s0.2mdn.net/simgad/17301375203678692555" target="_blank"
+              rel="noopener noreferrer"><img class="advert-class-image"
+                src="https://s0.2mdn.net/simgad/17301375203678692555" alt="advert"></a></p>
+        </section>
+        <section>
+          <p>Advertisement <a
+              href="https://googleads.g.doubleclick.net/aclk?sa=L&ai=CNRO9YGFMYqqUBPCfqMwP-L6DkALeraC8aaGn9eHnD4Wkm7MEEAEgpN3aBWC31IOFlDHIAQKpAp5zYTTcoSQ-qAMByAPJBKoEigJP0P6P8nuJPa12ITv2M1c5iLXNLVpPv_BqQU-z_sz6-XYLIjnhrIZp9FZciXTzHL5gSrkxwnvoQCfc8MdkBL70CaLEHsrGx5SkJrjLLsj0xZLEyvZYi1dqYFAN5earTrSB4RYz-kUtsuqFk-uy6zFQIfWES_xODvW1p3_XjmNR-gck49h5tx2Fo078J7yJc6Tjsw1Fnitf_TzWgLZJZwD6iY03NtF6b98x6O_os1EoBQt_-7rQfFcDnrCJCgTbv6BkkDBqC1N0wqvt-SaY6nvbfnZWJxk_qHRCqqn1b-o03maLmeZ06_SeeEiO2_16ExWN9Tsuuk_AMm0umyOV8C9HZc-lAuu32gA5KMAEqu69qOQDoAYCgAf588GgA6gHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6SjsQKoB9XJG6gHpr4bqAfz0RuoB5bYG6gHqpuxAqgH35-xAtgHAdIIBwiAYRABGB-xCcsBx-XnTf9BgAoBmAsByAsB2BMD0BUB-BYBgBcB&ae=1&num=1&sig=AOD64_1aZsvgyh-SKF22_pnDjkbiQLTdOw&client=ca-pub-7167863529667065&nb=17&adurl=https://www.instagram.com/schweppesng/"
+              target="_blank" rel="noopener noreferrer"><img class="advert-class-image"
+                src="https://tpc.googlesyndication.com/daca_images/simgad/8439947568588186766" alt="advert"></a></p>
+        </section>
+        
+
+      </section>
+
+    </section>
+
+    <section class="section-copyright">
+      <p><b> Copyright EliteBlog</b></p>
+      <p><i>All rights reserved. This material, and other digital content on this website, may not be reproduced,
+          published, broadcast, rewritten or redistributed in
+          whole or in part without prior express written permission from EliteBlog.</i>
+      </p>
+      <p>Contact: eliteblog@yahoo.com</p>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- <section class="content-wrapper">
           <section class="news-section">
             <h3 class="win">Chelsea’s Tuchel divorces journalist wife after 13 years</h3>
             <img class="news-image" src="https://cdn.punchng.com/wp-content/uploads/2022/03/11234225/Thomas-Tuchel.jpg" alt="image">
@@ -163,117 +341,117 @@
           </div>
 
        </section>
-     </section>      
-   </main>
-  
-   <footer>
+     </section>       -->
+  </main>
+
+  <footer>
     <!-- ADD THE FOOTER SECTION HERE -->
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-logo">
-          <h3>Elite Blog</h3>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h3>El<span>ite</span> Blog</h3>
+      </div>
+
+      <form action="" class="footer-form">
+        <div class="form-search-wrapper">
+          <input type="text" class="search-input" placeholder="Search...">
         </div>
-        <div class="footer-call-to-action">
-          <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+        <div class="search-button">
+          <a href="#" id="search-news" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
               fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg></a>
-          <form action="" class="form-search-wrapper">
-            <input type="text" class="search-input" placeholder="Search...">
-          </form>
         </div>
+      </form>
+    </div>
+    <div class="footer-middle-section">
+      <div class="footer-section">
+        <a href="../index.html">TIIDELab</a>
+        <a href="../sports.html">Sports</a>
+        <a href="../politics.html">Politics</a>
+        <a href="../metro.html">Metro Plus</a>
+        <a href="../tidelabNews.html">Tidelab News</a>
+
+        <a href="#">Business</a>
       </div>
-      <div class="footer-middle-section">
-        <div class="footer-section">
-          <a href="#">TIIDELab</a>
-          <a href="./sports.html">Sports</a>
-          <a href="./politics.html">Politics</a>
-          <a href="./metro.html">Metro Plus</a>
-          <a href="./tidelabNews.html">Tidelab News</a>
-
-          <a href="#">Business</a>
-        </div>
-        <div class="footer-section">
-          <a href="#">Breaking News</a>
-          <a href="#">Covid-19</a>
-          <a href="#">2023 Elections</a>
-          <a href="#">Tech Events</a>
-          <a href="#">Pre-fellowship</a>
-          <a href="#">Fellowship</a>
-        </div>
-        <div class="footer-section">
-          <a href="#">Anti-Corruption</a>
-          <a href="#">Barrier Breakers</a>
-          <a href="#">Agriculture</a>
-          <a href="#">Economy</a>
-          <a href="#">Foreign Investments</a>
-          <a href="#">Job vacancies</a>
-        </div>
-        <div class="footer-section">
-          <a href="#">Special features</a>
-          <a href="#">Technology</a>
-          <a href="#">Qatar 2022 world cup</a>
-          <a href="#">Columns</a>
-          <a href="#">Advertise with Us</a>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
+      <div class="footer-section">
+        <a href="#">Breaking News</a>
+        <a href="#">Covid-19</a>
+        <a href="#">2023 Elections</a>
+        <a href="#">Tech Events</a>
+        <a href="#">Pre-fellowship</a>
+        <a href="#">Fellowship</a>
       </div>
-      <hr>
-      <div class="footer-bottom-section">
+      <div class="footer-section">
+        <a href="#">Anti-Corruption</a>
+        <a href="#">Barrier Breakers</a>
+        <a href="#">Agriculture</a>
+        <a href="#">Economy</a>
+        <a href="#">Foreign Investments</a>
+        <a href="#">Job vacancies</a>
+      </div>
+      <div class="footer-section">
+        <a href="#">Special features</a>
+        <a href="#">Technology</a>
+        <a href="#">Qatar 2022 world cup</a>
+        <a href="#">Advertise with Us</a>
+        <a href="#"><button class="footer-subscribe-btn">Subscribe</button></a>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom-section">
 
-        <div class="footer-bottom-link">
-          <a href="#">About Us</a>
-          <a href="#">Advertise with Us</a>
-          <a href="#">Contact</a>
-        </div>
+      <div class="footer-bottom-link">
+        <a href="editt.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
-        <div class="footer-social-links">
-          <p>Follow us on Social Media:</p>
-          <a href="https://twitter.com/TIIDELab" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter"
-              viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685
+      <div class="footer-social-links">
+        <p>Social Media:</p>
+        <a href="https://twitter.com/TIIDELab" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter"
+            viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685
               0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0
               0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0
               0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203
                0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1
                 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-            </svg></a>
-          <a href="https://web.facebook.com/pg/TIIDELab" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926
+          </svg></a>
+        <a href="https://web.facebook.com/pg/TIIDELab" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926
                7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 
                1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354
                 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/company/tiidelab" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin"
-              viewBox="0 0 16 16">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/tiidelab" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0
                .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943
                12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822
                 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/tiidelab" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-            </svg>
-          </a>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/tiidelab" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </svg>
+        </a>
 
-        </div>
       </div>
-      <p class="mentor-name">Project Supervised by: Miss Oyinlade Ojesanmi</p>
-      <p class="copyright">&copy 2022 TIIDELab Pre-fellowship Group D</p>
+    </div>
+    <p class="copyright">&copy 2022 TIIDELab Pre-fellowship Group D</p>
     </div>
 
   </footer>
 
 </body>
+
 </html>
