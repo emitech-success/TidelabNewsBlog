@@ -285,7 +285,7 @@ footer hr {
 
   li {
     display: none;
-    padding: 0.6rem 1rem;
+    padding: 0.2rem 1rem 0.2rem;
     font-size: 1.3rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {

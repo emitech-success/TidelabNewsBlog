@@ -11,6 +11,7 @@ header {
   position: sticky;
   top: 0px;
   left: 0px;
+  z-index: 1;
 }
 nav {
   display: flex;
@@ -51,27 +52,11 @@ nav {
   color: white;
 }
 /* hover styles for the nav-link */
-.nav-link {
-  position: relative;
-}
-.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  display: block;
-  height: 5px;
-  background: black;
-  left: 0;
-  right: 0;
-  bottom: -1.4625rem;
-  opacity: 0;
-}
+
 .nav-link:hover {
-  color: black;
+  opacity: 0.85;
 }
-.nav-link:hover::before {
-  opacity: 0.75;
-}
+
 .nav-call-to-action {
   margin-right: 2rem;
 }
