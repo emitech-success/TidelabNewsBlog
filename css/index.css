@@ -1327,11 +1327,12 @@ footer hr {
     z-index: 100;
   }
 
-  li {
+  .nav-menu li {
     display: none;
     padding: 0.6rem 1rem;
     font-size: 1.5rem;
   }
+
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
   }
