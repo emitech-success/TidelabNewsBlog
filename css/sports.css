@@ -741,7 +741,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 19px;
+    top: 20px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -750,7 +750,7 @@ footer hr {
   li {
     display: none;
     padding: 0.6rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -764,7 +764,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 50vh;
+    height: 55vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
@@ -1166,7 +1166,6 @@ footer hr {
 }
 
 /* EXTRA SMALL DEVICES LIKE SMARTPHONES */
-
 
 /* @media only screen and (max-width: 479px){
     main{
