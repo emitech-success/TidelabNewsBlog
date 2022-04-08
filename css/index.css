@@ -56,27 +56,11 @@ nav {
   color: white;
 }
 /* hover styles for the nav-link */
-.nav-link {
-  position: relative;
-}
-.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  display: block;
-  height: 5px;
-  background: black;
-  left: 0;
-  right: 0;
-  bottom: -1.4625rem;
-  opacity: 0;
-}
+
 .nav-link:hover {
   opacity: 0.85;
 }
-.nav-link:hover::before {
-  opacity: 0.75;
-}
+
 .nav-call-to-action {
   margin-right: 2rem;
 }
@@ -91,7 +75,6 @@ nav {
 .nav-call-to-action a:last-child {
   padding: 0.6rem 0.6rem 0.5rem 0.6rem;
 }
-
 
 /* //MAIN SECTION/ */
 
@@ -1321,7 +1304,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 17px;
+    top: 20px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -1329,8 +1312,8 @@ footer hr {
 
   .nav-menu li {
     display: none;
-    padding: 0.6rem 1rem;
-    font-size: 1.5rem;
+    padding: 0.2rem 1rem 0.2rem;
+    font-size: 1.3rem;
   }
 
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
@@ -1345,7 +1328,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 63vh;
+    height: 55vh;
     padding-top: 2rem;
     border-radius: 3px;
   }

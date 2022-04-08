@@ -17,7 +17,6 @@ html {
 /* //HEADER SECTION// */
 header {
   background: linear-gradient(to right, #2bb7da, #31d35c);
-  z-index: 1;
   position: sticky;
   top: 0px;
   left: 0px;
@@ -62,27 +61,11 @@ nav {
   color: white;
 }
 /* hover styles for the nav-link */
-.nav-link {
-  position: relative;
-}
-.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  display: block;
-  height: 5px;
-  background: black;
-  left: 0;
-  right: 0;
-  bottom: -1.4625rem;
-  opacity: 0;
-}
+
 .nav-link:hover {
   opacity: 0.85;
 }
-.nav-link:hover::before {
-  opacity: 0.75;
-}
+
 .nav-call-to-action {
   margin-right: 2rem;
 }
@@ -100,11 +83,11 @@ nav {
 
 /* MAIN SECTION */
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap");
-*{
+* {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  font-family: "poppins", sans-serif; 
+  font-family: "poppins", sans-serif;
 }
 
 .minor-news-wrapper {
@@ -147,70 +130,65 @@ nav {
   font-size: 15px;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
 }
 
-.content-wrapper{
+.content-wrapper {
   width: 80%;
 }
 
-.news-image{
+.news-image {
   width: 90%;
   margin-top: 20px;
-  
 }
 
-
-.news-section{
+.news-section {
   margin-top: 7rem;
   margin-left: 10px;
 }
 
-.one{
+.one {
   font-style: oblique;
   font-size: 15px;
 }
 
-.two{
+.two {
   color: #2bb7da;
 }
 
-.quest{
+.quest {
   border-style: 1px, cadetblue, solid;
   background-color: lightgray;
   padding: 2px 0px 2px 7px;
 }
 
-.ipolowo{
+.ipolowo {
   font-style: italic;
 }
-.question{
-  color:cadetblue;
+.question {
+  color: cadetblue;
   font-style: italic;
- 
 }
-.ad-wrapper{
+.ad-wrapper {
   width: 20%;
 }
 
-.addy-image{
+.addy-image {
   width: 80%;
   height: 40rem;
-  margin-bottom: 8rem;  
+  margin-bottom: 8rem;
 }
 
-.advert{
+.advert {
   text-align: center;
   font-size: 8px;
 }
 
-.ad-image{
+.ad-image {
   width: 100%;
 }
-
-
 
 /* //FOOTER SECTION// */
 
@@ -380,7 +358,6 @@ footer hr {
 /* //RESPONSIVE DESIGN for the header and footer// */
 @media (max-width: 750px) {
   header {
-    z-index: 1;
     position: sticky;
     top: 0px;
     left: 0px;
@@ -415,7 +392,7 @@ footer hr {
   .nav-links {
     position: absolute;
     margin-top: 2.76rem;
-    top: 17px;
+    top: 20px;
     right: 0;
     width: 100%;
     z-index: 100;
@@ -423,8 +400,8 @@ footer hr {
 
   li {
     display: none;
-    padding: 0.6rem 1rem;
-    font-size: 1.5rem;
+    padding: 0.2rem 1rem 0.2rem;
+    font-size: 1.3rem;
   }
   .nav-checkbox:checked ~ .nav-links .nav-menu li {
     display: block;
@@ -438,7 +415,7 @@ footer hr {
   .nav-checkbox:checked ~ .nav-links .nav-menu {
     background: linear-gradient(to right, #2bb7da, #31d35c);
     opacity: 1.5;
-    height: 63vh;
+    height: 55vh;
     padding-top: 2rem;
     border-radius: 3px;
   }
