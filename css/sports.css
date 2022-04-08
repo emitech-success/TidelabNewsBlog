@@ -55,6 +55,7 @@ nav {
 .nav-menu {
   display: flex;
   list-style: none;
+  font-size: 1.3rem;
 }
 .nav-menu li:not(:last-child) {
   margin-right: 1.5rem;
